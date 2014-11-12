@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% include head.html %}
+    </head>
+
+    <body class="html front not-logged-in no-sidebars page-node page-node-27 node-type-page all-pages with-navigation with-subnav featured dir-ltr">
+        {% include header.html %}
+        {% include navigation.html %}
+        {% include pages/welcome/header.html %}
+        <div class="shadow-page"></div>
+        <div id="page">
+          <div id="main">
+              <div class="tabs"></div>
+          {% include pages/welcome/we-work-with.html %}
+          {% include pages/welcome/who-are-we.html %}
+          <div class="region region-content-bottom">
+            <div id="block-menu-block-1" class="block block-menu-block block-domains-home-page block-odd">
+              {% include shared/tech-domains.html %}
+            </div>
+            {% include pages/welcome/latest-posts.html %}
+            {% include shared/events.html %}
+            {% include pages/welcome/our-team.html %}
+            {% include pages/welcome/contact-form.html %}
+          </div>
+          {{ content }}
+          </div>
+        </div>
+        {% include first_footer.html %}
+        {% include second_footer.html %}
+    </body>
+</html>

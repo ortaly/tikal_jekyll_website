@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body class="one-sidebar sidebar-second page-taxonomy page-taxonomy-term all-pages with-navigation with-subnav dir-ltr page-{{ paginator.tag }} section-tags">
+    {% include header.html %}
+    {% include navigation.html %}
+    {% include tag_title.html %}
+    <div class="shadow-page"></div>
+    <div id="page">
+      <div id="main">
+        {% include tag_posts.html %}
+        {{ content }}
+      </div>
+    </div>
+    {% include first_footer.html %}
+    {% include second_footer.html %}
+  </body>
+</html>

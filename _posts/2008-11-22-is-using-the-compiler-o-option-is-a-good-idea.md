@@ -1,0 +1,11 @@
+---
+layout: post
+title: Is using the compiler –O option is a good idea
+created: 1227382703
+author: hagzag
+permalink: /devops/using-compiler-–o-option-good-idea
+tags:
+- DevOps
+- Compiler
+---
+<p style="text-align: left; direction: ltr;">A question I was asked by one of our customers quoted below:</p><p style="text-align: left; direction: ltr;"><b><span style="font-size: 12pt;">-O</span></b><span style="font-size: 12pt;"> </span></p> <p style="margin-left: 0.5in; text-align: left; direction: ltr;"><span style="font-size: 12pt;">Directs the compiler to try to generate faster code by inlining static, final and private methods. This option may slow down compilation, make larger class files, and/or make it difficult to debug. <b>-O</b> implicitly turns on <b>-depend</b> and turns off <b>-g</b>. </span></p> <p style="margin-left: 0.5in; text-align: left; direction: ltr;"><span style="font-size: 12pt;">This option informs the compiler that all generated class files are guaranteed to be delivered and upgraded as a unit, enabling optimizations that may otherwise break binary compatibility. Use this option with discretion. </span></p> <p style="margin-left: 0.5in; text-align: left; direction: ltr;"><span style="font-size: 12pt;">The Java Language Specification section 13.4.21 describes situations in which it is legal to use a java compiler to inline methods. The compiler will only optimize code for which source is available during the compilation, so the only .java files discoverable by the compiler should be for classes intended to be delivered or upgraded as a unit. In particular, ensure that no sources for other classes are accessible on CLASSPATH, keeping in mind that the present working directory, `.', is appended to CLASSPATH. </span></p> <p style="margin-left: 0.5in; text-align: left; direction: ltr;"><span style="font-size: 12pt;">To ensure that a product is able to run on 1.1 as well as future binary-compatible java virtual machines, one must ensure that any sources for JDK 1.1 classes are <i>never</i> available along CLASSPATH while using <b>-O</b>. </span></p><p style="margin-left: 0.5in; text-align: left; direction: ltr;">&nbsp;</p> <p style="text-align: left; direction: ltr;">Your opinion on this issue will be most appriciated</p>

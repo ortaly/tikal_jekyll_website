@@ -1,0 +1,35 @@
+---
+id: 49169
+login: zeev
+first_name: Zeev
+last_name: Ben Sender
+description: 
+about: ''
+follow_me_urls: []
+permalink: /zeev
+skills:
+  expert_skills:
+    JAVA: '10'
+    Spring: '8'
+    Hibernate: '8'
+    JDBC: '10'
+    EJB2/3: '10'
+    Linux: '10'
+    Tomcat: '6'
+    MySQL: '10'
+  developer_skills:
+    NoSQL: '2'
+    MongoDB: '2'
+    Hadoop: '2'
+    AWS: '2'
+experience:
+- title: 'Taptica, Java Expert '
+  years: 2013-2014
+  description: 'Developed the component aggregating Real Time Bidding data for further
+    analysis by bid price optimization algorithm team. The purpose of the project
+    was elaboration of an algorithm for maximizing profits from the company''s participation
+    in RTB auctions.  My task in the project: Getting familiar with the company''s
+    systems, RTB ecosystem and data flow. Aggregation of different data pieces related
+    to a single RTB auction using Hadoop AvroMapper. The aggregated data is being
+    analyzed by the algorithm team for the algorithm elaboration. Technologies and
+    environment: Hadoop, Hive, Cloudera manager, Avro, AvroMapper, Vagrant, RTB protoc'

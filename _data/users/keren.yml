@@ -1,0 +1,45 @@
+---
+id: 43
+login: keren
+first_name: Keren
+last_name: Finskelstein
+description: Senior Java Developer
+about: ''
+follow_me_urls: []
+image_path: pictures/picture-43-1392727184.jpg
+permalink: /java/keren
+skills:
+  expert_skills:
+    JAVA: '10'
+    SQL: '10'
+    Maven: '5'
+  developer_skills:
+    Hibernate: '2'
+    JDBC: '2'
+    MySQL: '2'
+    JBoss: '4'
+    Tomcat: '4'
+    GWT: '4'
+    PYTHON: '5'
+experience:
+- title: Senior Developer, Wochit
+  years: '2013'
+  description: 'The purpose of the project was to ingest user''s excel reports to
+    DB and generate billing reports, my part was to Collect the requirements, design
+    and code the standalone tool. there were a few challenges because  The project
+    had to be delivered in a very short time. As a start, understanding the business
+    and the working environment was needed (MySql, AWS, Hibernate layer, execution
+    environment), Each report has it''s own formatting and a the ingester tool had
+    to be suitable for all. Technologies: Java, Python, hibernate, Mysql, AWS S3. '
+- title: Senior Developer, HP
+  years: 2008-2013
+  description: 'The purpose of the project was to built one stop shop for deploying
+    (on the cloud), integrate and test products (standalone product delivered as a
+    solution).                                                                                                                      My
+    tasks as Full stack programmer were adding a feature: design, make DB changes
+    (if any) and code the service layer to the display layer.  - The project was internal
+    and saved lots of qa\dev working hours by running automatically the latest builds
+    at nights (with the entire flow)  - The project used several tools and tools versions
+    (for deploy, integration and test) that pluged-in to the infrastructure without
+    ''touching'' the main code  - Working with hibernate (Mysql), CSA (HP cloud solution)
+    and GWT - Manage the CI\CD process (SVN, Maven and Jenkins)'

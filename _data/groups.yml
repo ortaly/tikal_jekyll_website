@@ -1,0 +1,47 @@
+- group:
+    name: devops
+    tag: devops
+    title: DevOps | Tikal
+    header_title: DevOps
+    header_subtitle: Ahoy DevOps Pirates! Welcome to Tikal's DevOps Domain.
+    highlighted_team_members:
+      - Haggai Zagury
+      - Itai Or
+      - Liya Katz
+- group:
+    name: java
+    tag: java
+    title: Java | Tikal
+    header_title: Java
+    header_subtitle: Beware Java Jedi... You have just entered Tikal's Java Domain.
+    highlighted_team_members:
+      - Yanai Franchi
+      - Adi Baron
+      - Andrew Skiba
+      - Itai Peleg
+- group:
+    name: js
+    tag: js
+    title: JS | Tikal
+    header_title: JS
+    header_subtitle: Welcome JS Ninjas! You have just entered Tikal's JS Domain.
+    highlighted_team_members:
+      - Oren Farhi
+      - Assaf Gannon
+      - Sefi Ninio
+- group:
+    name: android
+    tag: android
+    title: Android | Tikal
+    header_title: Android
+    header_subtitle: What up Android Geeks ? Welcome to Tikal's .Android Domain.
+    highlighted_team_members:
+      - Igor Zalmanovich
+- group:
+    name: ruby
+    tag: ruby
+    title: Ruby | Tikal
+    header_title: Ruby
+    header_subtitle: Hello there Ruby Gurus. This is Tikal's Ruby Domain.
+    highlighted_team_members:
+      - Avi Tzurel

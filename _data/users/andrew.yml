@@ -1,0 +1,30 @@
+---
+id: 40
+login: andrew
+first_name: Andrew
+last_name: Skiba
+description: Java Architect
+about: Over 17 years of experience in the software industry, has vast experience in
+  Java Server development, in technologies such as Spring, Hibernate, EJB3 etc.
+follow_me_urls: []
+image_path: pictures/picture-40-1361178042.png
+permalink: /java/andrew
+skills:
+  expert_skills:
+    JAVA: '7'
+    Hibernate: '6'
+    Spring: '6'
+    EJB2/3: '4'
+    JPA: '4'
+    Linux: '10'
+    Tomcat: '7'
+    SVN: '7'
+  developer_skills:
+    SQL: '10'
+    JDBC: '10'
+    ANT: '10'
+    Maven: '10'
+  familiar_skills:
+    JavaScript: '10'
+    jQuery: '10'
+    Jenkins: '10'

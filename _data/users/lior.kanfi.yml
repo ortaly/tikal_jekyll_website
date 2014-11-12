@@ -1,0 +1,40 @@
+---
+id: 32
+login: lior.kanfi
+first_name: Lior
+last_name: Kanfi
+description: Founder and CEO
+about: Over 20 years of experience in the high tech industry as software development
+  entrepreneur, supporter of emerging open source technologies and programing languages.
+follow_me_urls:
+- http://il.linkedin.com/in/liorkanfi/
+- https://twitter.com/kanfil
+image_path: pictures/picture-32-1361370654.jpg
+permalink: /java/liorkanfi
+skills:
+  expert_skills:
+    JAVA: '10'
+    ALM: '10'
+    ANT: '10'
+    Spring: '6'
+    Hibernate: '8'
+    SQL: '10'
+    Linux: '10'
+    JBoss: '10'
+    SVN: '5'
+    Bugzilla: '8'
+    Maven: '5'
+    JDBC: '10'
+  developer_skills:
+    JavaScript: '8'
+    HTML: '8'
+    Git: '8'
+    EJB2/3: '8'
+    JPA: '8'
+    MySQL: '8'
+    Jenkins: '8'
+    Nexus: '8'
+    ExtJS: '8'
+  familiar_skills:
+    PHP: '1'
+    Sonar: '1'

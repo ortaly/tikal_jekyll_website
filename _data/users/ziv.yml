@@ -1,0 +1,32 @@
+---
+id: 49168
+login: ziv
+first_name: Ziv
+last_name: Rosenzweig
+description: JavaScript & .NET Senior Developer
+about: ''
+follow_me_urls:
+- il.linkedin.com/pub/ziv-rosenzweig/3/755/a52
+image_path: pictures/picture-49168-1392711623.jpg
+permalink: /ziv
+skills:
+  expert_skills:
+    .NET: '10'
+    ASP.NET: '6'
+    JavaScript: '10'
+    JavaScript - Events: '8'
+    OOJS: '8'
+  developer_skills:
+    JAVA: '4'
+    jQuery: '4'
+    Linux: '4'
+  familiar_skills:
+    AngularJS: '1'
+    NodeJS: '1'
+experience:
+- title: JavaScript Developer @ CA Technologies
+  years: 2013-2014
+  description: Mission was developing an Admin SPA application using AngularJs, Grunt,
+    Bower, NodeJs, SASS. In addition, supported all development team with writing
+    current CSS code. Quickly entered the exsiting code in order to help releasing
+    versions.

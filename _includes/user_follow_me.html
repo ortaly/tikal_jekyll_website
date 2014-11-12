@@ -1,0 +1,25 @@
+<div id="block-views-follow-user-block" class="block block-views block-odd">
+  <div class="content">
+    <div class="view view-follow-user view-id-follow_user view-display-id-block">
+      <div class="view-content">
+        <div class="view-content-limit">
+          <div class="view-content-limit-content">
+            <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+              <div class="views-field views-field-field-first-name">
+                <span class="views-label views-label-field-first-name">Follow</span>    
+                <div class="field-content">{{ page.user_first_name | capitalize }}</div>
+              </div>
+              <div class="views-field views-field-field-follow-on">
+                <div class="field-content">
+                  {% for url in page.user_follow_me_urls %}
+                    <a class="{{ url }}" href="{{ url }}" target="_blank">{{ url }}</a>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

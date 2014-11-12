@@ -1,0 +1,28 @@
+---
+id: 49167
+login: michaelho
+first_name: Michael
+last_name: Hollander
+description: Ruby on Rails Developer
+about: ''
+follow_me_urls:
+- http://www.linkedin.com/profile/view?id=19210724&locale=en_US&trk=tyah&trkInfo=tas%3Amichael%20holl%2Cidx%3A2-1-2
+image_path: pictures/picture-49167-1393916696.jpg
+permalink: /michaelho
+skills:
+  developer_skills:
+    RoR: '2'
+    JAVA: '2'
+    MSSQL: '5'
+    JavaScript: '5'
+    jQuery: '4'
+    HTML: '5'
+    CSS3: '2'
+    Ruby: '2'
+experience:
+- title: Ruby on Rails Developer @ Nurego
+  years: '2014'
+  description: Mission was to develop an entire front end solution as part of an enterprise
+    web platform for the customer.  This included developing a rails app with jquery/js
+    on the client-side and ruby code on the server-side. The rails app communicates
+    with the core back-end (which is written using the Sinatra framework) via JSON.

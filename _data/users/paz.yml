@@ -1,0 +1,22 @@
+---
+id: 122
+login: paz
+first_name: Paz
+last_name: Aricha
+description: Ruby on Rails Developer
+about: ''
+follow_me_urls:
+- il.linkedin.com/in/pazaricha
+image_path: pictures/picture-122-1373355951.jpg
+permalink: /ruby/paz
+skills:
+  expert_skills:
+    RoR: '2'
+    Ruby: '2'
+    JavaScript: '3'
+    jQuery: '4'
+    Git: '5'
+  developer_skills:
+    OOJS: '2'
+    PHP: '2'
+    SQL: '2'

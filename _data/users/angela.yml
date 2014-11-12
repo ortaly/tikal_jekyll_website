@@ -1,0 +1,42 @@
+---
+id: 144
+login: angela
+first_name: Angela
+last_name: Asher
+description: Java Developer
+about: Consulting java projects initiation, using Spring, Hibernate and Solr technologies.
+follow_me_urls: []
+image_path: pictures/picture-144-1398238581.jpg
+permalink: /java/angela
+skills:
+  expert_skills:
+    JDBC: '4'
+    SVN: '4'
+    ANT: '2'
+    JAVA: '10'
+    Linux: '10'
+  developer_skills:
+    SQL: '4'
+    Spring: '4'
+    Hibernate: '4'
+    Solr: '4'
+experience:
+- title: Tufin
+  years: '2013'
+  description: The purpose of the project is to handle the security policy of big
+    organizations, analyzing and reporting risks  on the security policy. My task
+    was to port legacy code written in C++ to java, spring and hibernate using Postgres
+    DB.
+- title: Zaponet
+  years: '2013'
+  description: The company is giving big data solutions to customers. the purpose
+    of the project was to gather and Cataloging all musical information including
+    all the writers, composers, and performers of all Israeli musical albums from
+    ACUM organization to the National Library of Israel. - Design and implement the
+    Collection, analysis and cataloging the data from ACUM and NLI. the project was
+    written in spring, hibernate and using mySQL DB. - Searching for data using Solr.
+    - creating GUI  for the data analysis and reports.
+- title: ' Checkmarks'
+  years: '2013'
+  description: Creating Plugins for Eclipse and Intellij Idea for performing static
+    code analysis. design and implement new features for the Plugins.

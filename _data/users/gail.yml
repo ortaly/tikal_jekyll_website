@@ -1,0 +1,36 @@
+---
+id: 116
+login: gail
+first_name: Gail
+last_name: Steiger
+description: JS Developer
+about: ''
+follow_me_urls:
+- il.linkedin.com/in/gailsteiger
+image_path: pictures/picture-116-1384345566.jpg
+permalink: /js/gail
+skills:
+  expert_skills:
+    JavaScript: '6'
+    jQuery: '4'
+    CSS3: '2'
+    JavaScript - Events: '4'
+  developer_skills:
+    ASP.NET: '6'
+    .NET: '6'
+    BackboneJS: '6'
+    SQL: '6'
+experience:
+- title: JS Fullstack Developer @ LivePerson
+  years: '2013'
+  description: AT Liveperson I joined the FrontEnd team for a leading up to a product
+    release. My role was hand-ons coding and a source for of know-how On the client-side,I
+    used javascript and variants jquery, backbonejs, marionette, requirejs, propriety
+    custom components, Sass    My contributions were in the area of improving backbone
+    model, collection implementation and hetter markup.
+- title: Full stack JS Developer @ Tufin
+  years: 2012-2013
+  description: Member of development team for a new Web application (based on JSF
+    technology). Product is geared to large enterprise customers and needs to support
+    large amounts of data and complex interactivity. Responsible for client-side development.
+    Made changes to existing markup, CSS and JavaScript which res

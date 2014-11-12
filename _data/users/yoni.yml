@@ -1,0 +1,39 @@
+---
+id: 24206
+login: yoni
+first_name: Yehonatan
+last_name: Homi
+description: 
+about: ''
+follow_me_urls: []
+image_path: pictures/picture-24206-1390406684.jpg
+permalink: /yoni
+skills:
+  expert_skills:
+    JAVA: '5'
+    SQL: '3'
+    Spring: '3'
+    JDBC: '5'
+    AJAX: '4'
+    HTML: '5'
+    JavaScript: '4'
+  developer_skills:
+    Hibernate: '2'
+    JPA: '2'
+    jQuery: '2'
+    MySQL: '2'
+    JBoss: '2'
+    Tomcat: '2'
+experience:
+- title: 'Software Engineer, Ceragon '
+  years: '2013'
+  description: 'I worked in the NMS (network managment system) team. The nms product
+    provided by Ceragon to her clients give them the ability to manage all the mobile
+    network elements spread in a big geographical area from one control room.  The
+    technologies I used in the NMS project: java 7,Spring, hibernate, jms, junit,
+    ejb, JAX-RS and eclipse rcp & java swing for client development The server in
+    the product is JBOSS and the database is postgress. Teamcity was used as continuous
+    build tool. to connect to the devices the NMS uses SNMP and Rest protocols  The
+    tasks i was involve with in the projects were developing some new features for
+    the product (client and server side), fixing performance issues and transaction
+    problems ( & transactions leak).'

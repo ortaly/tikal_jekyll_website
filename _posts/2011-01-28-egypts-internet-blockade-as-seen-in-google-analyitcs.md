@@ -1,0 +1,10 @@
+---
+layout: post
+title: Egypt's Internet Blockade as seen in Google Analyitcs
+created: 1296231900
+author: liorb
+permalink: /egypts-internet-blockade-seen-google-analyitcs
+tags:
+- Flex Java
+---
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_tECzk8Tdl88/TUMu5WIH9BI/AAAAAAAAALk/W4zZVy5CKdk/s1600/no-internet.png"><img style="float: left; margin: 0pt 10px 10px 0pt; cursor: pointer; width: 87px; height: 87px;" src="http://2.bp.blogspot.com/_tECzk8Tdl88/TUMu5WIH9BI/AAAAAAAAALk/W4zZVy5CKdk/s400/no-internet.png" alt="" id="BLOGGER_PHOTO_ID_5567345127087141906" border="0" /></a>I  run a number of websites in many languages, Arabic is one of them. Many of my Arabic language visitors are from Egypt. As you probably know, currently there's a massive wave of demonstrations in a number of Egyptian cities against the governing prime minister. As a result, the government there decided to block the internet in order to avoid people from reporting about the protests. Here's the results of that blockade as seen in today's <a href="http://www.blogger.com/www.google.com/analytics">Google Analytics </a>reports from my site.<br /><br />I made a comparison between yesterday's Egyptian visitors stats to today's result. The day is still not over in Egypt so the comparison is not 100% accurate but the results are pretty clear. Bellow you see the huge decline in traffic from each major Egyptian city. Traffic declined from 95% to 98% in each of the listed cities. It seems like internet communication out of Egypt is almost zero today.<br /><br /><div style="text-align: center;"><a href="http://1.bp.blogspot.com/_tECzk8Tdl88/TULwkBHw5LI/AAAAAAAAALU/0qOeUDTVVPs/s1600/egypt.PNG"><img style="float: left; margin: 0pt 10px 10px 0pt; cursor: pointer; width: 400px; height: 207px;" src="http://1.bp.blogspot.com/_tECzk8Tdl88/TULwkBHw5LI/AAAAAAAAALU/0qOeUDTVVPs/s400/egypt.PNG" alt="" id="BLOGGER_PHOTO_ID_5567276590950311090" border="0" /></a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><div style="text-align: left;"><br /></div></div>

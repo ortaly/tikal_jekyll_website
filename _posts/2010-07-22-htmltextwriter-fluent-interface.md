@@ -1,0 +1,10 @@
+---
+layout: post
+title: HtmlTextWriter fluent interface
+created: 1279807380
+author: igorz
+permalink: /htmltextwriter-fluent-interface
+tags:
+- .Net Open Source
+---
+When working on new features in IZWebFileManager I needed to change rendered HTML.<br /><br />I took a look at the code I wrote more then 3 years ago.... It is so complicated!<br /><br />IZWebFileManager is a typical custom control that overrides Render and uses HtmlTextWriter's API to produce  HTML.  Here is a small part of the rendering flow:<br /><br /><a href="http://picasaweb.google.com/lh/photo/zBk6FKvOANeJzPxvCEDGyzgAANDkdsfZKq9zdjvyQwU?feat=embedwebsite"><img src="http://lh4.ggpht.com/_XoCEelnLy98/TEhVOVJK9aI/AAAAAAAAKfA/uLXVD3lwCd8/s800/html_render_before.png" /></a><br /><br />It took me a while to figure out what is HTML is rendered here.<br />The fact is, that HtmlTextWriter's API is not intuitive and requires a lot of effort to produce relatively  simple HTML.  Is there a alternative way to render output?<br /><br />WhenLINQ has been released all the .NET world has met fluent APIs, and I was wandering if there is such an API for rendering ASP.NET controls.<br /><br />I found this one: <a href="http://csharpfeeds.com/post/9989/HtmlTextWriter_fluent_interface.aspx">http://csharpfeeds.com/post/9989/HtmlTextWriter_fluent_interface.aspx</a><br /><br />I've just added it to my project (made it internal to prevent collisions), changed it a bit and rewrote the code above:<br /><br /><a href="http://picasaweb.google.com/lh/photo/Ib1WHV4CpNuZ6K3c9NoJZDgAANDkdsfZKq9zdjvyQwU?feat=embedwebsite"><img src="http://lh6.ggpht.com/_XoCEelnLy98/TEhVlx8uMKI/AAAAAAAAKfI/zSB5UKVWvV8/s800/html_render_after.png" /></a><br /><br />Now it is much easier to change the rendered HTML, because this code flow is much closer to the HTML markup flow, than when it was written using the "classic" HtmlTextWriter API.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/5201357166850736293-7828776776390317969?l=igorzelmanovich.blogspot.com' alt='' /></div>

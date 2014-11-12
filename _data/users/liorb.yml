@@ -1,0 +1,44 @@
+---
+id: 81
+login: liorb
+first_name: Lior
+last_name: Boord
+description: UI Senior Developer
+about: ''
+follow_me_urls:
+- il.linkedin.com/in/liorboord
+image_path: pictures/picture-81-1395642153.jpg
+permalink: /incubator/liorb
+skills:
+  expert_skills:
+    JAVA: '5'
+    SQL: '5'
+    Spring: '5'
+    Maven: '4'
+    JavaScript: '2'
+  developer_skills:
+    Hibernate: '5'
+    Linux: '5'
+    JavaScript - Events: '5'
+    Django: '5'
+    AngularJS: '5'
+    BackboneJS: '5'
+    jQuery: '5'
+  familiar_skills:
+    CSS3: '1'
+    PYTHON: '1'
+experience:
+- title: JavaScript Developer @ CA Technologies
+  years: 2013-2014
+  description: Responsible for development of GUI infrastructure for a large project.
+    Developed a large number of reusable AngularJS directives dealing with advanced
+    angular topics such as component lifecycle, compilation. While extending Angular's
+    own Directive library (mainly form elements) Gained deep understanding of Angular's
+    library code. Developed using Angular-UI with Bootstrap and Saas gained knowledge
+    of both frameworks. Developed client side communication, error handling and loging
+    layers. Developed angular build tasks using grunt.
+- title: Javascript Developer @ Sapiens
+  years: '2013'
+  description: 'Upgraded a large scale first generation JS\JSP application to use
+    modern architecture and frameworks. Worked on both Client and Server side. Technologies
+    used: jQuery, Backbone.js, implemented MVC architecture, JSON.'

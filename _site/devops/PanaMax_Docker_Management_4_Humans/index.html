@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>PanaMax - Docker Management for Humans</title>
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<!-- syntax highlighting CSS -->
+<!--link rel="stylesheet" href="/css/syntax.css"-->
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/assets/application-8947dcb05f2a6c782668b71b0459006a.css">
+
+<!-- Custom JS -->
+<script src="/assets/vendor/jquery-2.1.1-fbf0c31ef61d80bbbc98a9cdfc7e6632.js"></script>
+<script src="/assets/vendor/jquery.validate-466ee815d7a2fb9b74b895b6a0f9551c.js"></script>
+<script src="/assets/vendor/scrollup/jquery.scrollUp-d730604bacd24a59da00d38b42cd77af.js"></script>
+<script src="/assets/vendor/drupal_legacy-d5580e3eaf6de5a1446255d180dc73d3.js"></script>
+<script src="/assets/vendor/angular.min-a85961e158ad149389394add24fda0fb.js"></script>
+<script src="/assets/meetup_events-9be924cb3b0638fb9f317df1ecc5ce2d.js"></script>
+<script src="/assets/fb_events-429bca6672babc98218d76e33ed4c08b.js"></script>
+<script src="/assets/contact-897905f16738b8c5c1688eefae319441.js"></script>
+<script src="/assets/vendor/jquery.jcarousel-core-0548e1afb2b9f54c002c9243919e181e.js"></script>
+<script src="/assets/vendor/jquery.jcarousel-autoscroll-0568997c723ec980850263260205fc51.js"></script>
+<script src="/assets/application-e8e458ec79d0f0f55849d897ed0fa5ab.js"></script>
+
+<!-- ShareThis JS for posts section -->
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "6ae64a50-63a5-4021-a8de-b0adce0ce99b", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+    var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-1365497-6"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+    //--><!]]>
+</script>
+
+    </head>
+
+    <body class="one-sidebar sidebar-second section-devops page-node node-type-article all-pages with-navigation with-subnav featured dir-ltr">
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=519865898033052&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <div id="header-first">
+  <div class="region region-header-first">
+    <div id="block-search-form" class="block block-search block-odd">
+
+      <div class="content">
+        <form id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+              <h2 class="element-invisible">Search form</h2>
+              <div class="form-item form-type-textfield form-item-search-block-form">
+                <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+                <input title="Enter the terms you wish to search for." placeholder="Search" type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
+              </div>
+              <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit"></div><input type="hidden" name="form_build_id" value="form-hCEJ23kB0sHlr4dB3Yv5-2cDcH10yNwGSUn69WjCjF4">
+              <input type="hidden" name="form_id" value="search_block_form">
+            </div>
+      </div></form>  </div><!-- /.content -->
+    </div><!-- /.block -->
+    <div id="block-menu-menu-top-links" class="block block-menu block-even">
+    </div><!-- /.block -->
+    <div id="block-menu-menu-language" class="block block-menu block-odd">
+      
+      <div class="content">
+        <ul class="menu clearfix"><li class="first last leaf עברית"><a href="/hebrew" title="">עברית</a></li>
+      </ul>  </div><!-- /.content -->
+    </div><!-- /.block -->
+  </div>
+</div>
+<div id="google-search-form" style="visibility:hidden; width: 1px; height: 1px; float:right;">
+  <script>
+
+    (function() {
+        var cx = '012617499894110201007:qu0yvmmzksu';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = false;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
+<gcse:searchresults-only linkTarget="_self"></gcse:searchresults-only>
+
+
+<script>
+    $(document).ready(function() {
+        $('#search-block-form').submit(function (e) {
+            e.preventDefault();
+
+            //find google search form
+            var form = $('.gsc-control-wrapper-cse').find('form');
+            var input = form.find("input[name='search']");
+            var btn = form.find("input[type='image']");
+            var tikalSearch = $('#edit-search-block-form--2');
+            tikalSearch.blur();
+            $("#bg").show();
+            input.val(tikalSearch.val());
+            //form.submit();
+            btn.click();
+
+        });
+        
+    });
+
+
+</script>
+
+</div>
+
+        <header id="header" role="banner">
+  <div class="logo-and-region-header">
+    <div class="background-logo"></div>
+    <a href="/" title="Home" rel="home" id="logo">
+      <img src="/assets/logo-ebc269c722e9e1e11b3252c442c75750.png" alt="Home">
+    </a>
+
+
+    <div class="region region-header">
+      <section id="block-menu-menu-header-menu" class="block block-menu block-even">
+        <h2 class="block-title element-invisible">Header menu</h2>
+
+        <div class="content">
+          <ul class="menu clearfix">
+            
+              
+              <li class="leaf"><a href="/about" class="">About</a></li>
+            
+              
+              <li class="leaf"><a href="/solutions" class="">Solutions</a></li>
+            
+              
+              <li class="leaf"><a href="/careers" class="">Careers</a></li>
+            
+              
+              <li class="leaf"><a href="/events" class="">Events</a></li>
+            
+              
+              <li class="leaf"><a href="/contact" class="">Contact</a></li>
+            
+        </ul>  </div><!-- /.content -->
+      </section><!-- /.block -->
+      <section id="block-menu-menu-domains" class="block block-menu block-odd">
+        <h2 class="block-title element-invisible">Domains</h2>
+
+        <div class="content">
+          <ul class="menu clearfix"><li class="first leaf devops"><a href="/devops" title="">DevOps</a></li>
+            <li class="leaf java"><a href="/java" title="">JAVA</a></li>
+            <li class="leaf js"><a href="/js" title="">JS</a></li>
+            <li class="leaf android"><a href="/android" title="">Android</a></li>
+            <li class="last leaf ruby"><a href="/ruby" title="">Ruby</a></li>
+        </ul>  </div><!-- /.content -->
+      </section><!-- /.block -->
+    </div>
+  </div><!-- /#logo-and-region-header -->
+</header>
+
+        <div class="featured-background">
+  <div id="featured">
+    <div class="region-title-and-featured">
+      <h1 class="title" id="page-title">PanaMax - Docker Management for Humans</h1>
+      <div class="region region-featured">
+        <div id="block-views-author-block" class="block block-views">
+          <div class="content">
+            <div class="view view-author view-id-author view-display-id-block">
+  <div class="view-content">
+    <div class="view-content-limit">
+      <div class="view-content-limit-content">
+        <div class="views-row">
+          <div class="views-field views-field-picture">
+            <div class="field-content">
+              
+                <img typeof="foaf:Image" src="/assets/pictures/picture-53-1363331338-7605fa3cdebfa522a4a18ef8fd642e3d.jpg" width="307" height="230" alt="">
+              
+            </div>  
+          </div>
+          <div class="views-field views-field-field-first-name">
+            <div class="field-content">Haggai</div>
+          </div>
+          <div class="views-field views-field-field-last-name">
+            <div class="field-content">Zagury</div>
+          </div>
+          <div class="views-field views-field-field-description">
+            <div class="field-content">DevOps Architect</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="shadow-page"></div>
+        <div id="page">
+          <div id="main">
+            <div class="region region-content">
+              <div id="block-system-main" class="block block-system">
+                <div class="content">
+                  <article class="node node-article published with-comments node-full">
+                    <header>
+  <div class="by-and-tags">
+    <div class="by">
+      <div class="label-by">by</div>
+      <div class="name">
+        <a href='/devops/hagzag'>hagzag</a>
+      </div>
+    </div>
+    <div class="tags">
+      <div class="label-tags">tags:</div>
+      <div class="float-tags">
+        <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-hidden clearfix">
+          <ul class="links">
+            
+              <li>
+                <a href="/tags/DevOps">DevOps</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <time pubdate="" datetime="2014-08-16 00:00:00 +0300">
+        <div class="day">16</div>
+        Aug. 2014
+      </time>
+  
+  
+  
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans' st_title='PanaMax - Docker Management for Humans' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans' st_title='PanaMax - Docker Management for Humans' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans' st_title='PanaMax - Docker Management for Humans' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans' st_title='PanaMax - Docker Management for Humans' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans' st_title='PanaMax - Docker Management for Humans' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+</header>
+
+                    <div class="entry-content">
+<p><img class="left" src="/sites/default/files/images/docker-logo-100x134.png" style="margin: 5px; border-width: 0px; border-style: solid; float: left;" title="'Docker logo'" /> As cool as Docker is there is quite a lot of stuff you need to start caring about, service discovery, orchestration, routing and so on, and there is a long line of technologies which help you achieve that, here is quite a long list just as an example:</p>
+
+<ul>
+    <li><a href="https://coreos.com/">CoreOS</a> &ndash; The orchestrator / Container host operating system comes prepackaged with <a href="https://www.docker.com/">Docker</a>, <a href="https://github.com/coreos/etcd">etcd</a> &amp; <a href="https://github.com/coreos/fleet">fleet</a></li>
+    <li><a href="https://github.com/coreos/fleet">fleet</a> &ndash; A distributed init system paired with <a href="https://github.com/coreos/etcd">etcd</a> &amp; <a href="https://coreos.com/using-coreos/systemd">systemd</a></li>
+    <li><a href="http://zookeeper.apache.org/">zookeeper</a>, <a href="https://github.com/lonnen/doozer">Doozer</a>, <a href="https://github.com/coreos/etcd">etcd</a>&ndash; share configuration across a cluster of servers (cluster manager)</li>
+    <li><a href="https://flynn.io/">flynn</a> &ndash; A framework for building distributed systems in the past you might of heard of <a href="https://github.com/flynn/discoverd">discoverd</a> which is now part of flynn.</li>
+    <li><a href="http://mesos.apache.org/">mesos</a>, <a href="https://github.com/GoogleCloudPlatform/kubernetes">Kubernetes</a>, <a href="http://openshift.github.io/geard/">geard</a>&ndash; cluster managers</li>
+    <li><a href="http://www.fig.sh/">fig</a> &ndash; Orchestration of local development environments.</li>
+    <li><a href="https://github.com/docker/libswarm">libswarm</a> &ndash; network services &ldquo;composer&rdquo; for containers.</li>
+    <li><a href="https://github.com/crosbymichael/skydock">skydock</a> &ndash; Service Discovery for Docker.</li>
+    <li><a href="https://github.com/progrium/ambassadord">ambassadord</a>, <a href="https://github.com/progrium/registrator">registrator</a>, <a href="https://github.com/progrium/consulate">consulate</a> &ndash; you will find these three work together in order to enable service registration and discovery / auto discovery for Docker containers, <a href="https://github.com/progrium/registrator">registrator</a> also uses <a href="http://www.consul.io/">consul</a> and <a href="https://github.com/coreos/etcd">etcd</a> in order to do that.</li>
+    <li><a href="http://www.consul.io/">consul</a> &ndash; Built based on <a href="http://www.serfdom.io/">serf</a> a service discovery broker.</li>
+    <li><a href="https://github.com/progrium/consulate">consulate</a> &ndash; another discovery service based on <a href="http://www.consul.io/">consul</a></li>
+    <li><a href="https://github.com/progrium/configurator">configurator</a> &ndash; serve configuration files via REST API</li>
+    <li><a href="https://github.com/progrium/registrator">registrator</a> &ndash; service registry bridge (a.k.a <a href="https://github.com/progrium/docksul">docksul</a>)</li>
+</ul>
+
+<p>And there is more (believe me I&rsquo;ve done my research &hellip;) If you need to spin up a single container you do not need all this stuff, but when you need to launch more than one container in order to bring your system up, and maybe span over more than 1 host you need a few of the tools listed above in order to achieve that. Looking at this list and knowing it is potentially mych longer &hellip; think how many tools you need to master in order to launch a POC &hellip; before you can start developing your system and develop a continuous delivery / deployment scheme for it !</p>
+
+<h4>So how can you simplify the development life-cycle of a containerized solution / system ?</h4>
+
+<p><img class="left" src="/sites/default/files/images/pmx_logo.png" title="'Panamax logo'" /> Panamax by <a href="http://www.centurylinklabs.com/">centurylinklabs</a> to the rescue. Panamax is (and I quote) a containerized app creator with an open-source app marketplace hosted in GitHub, I think the last bit is most important one the fact you can find on github a template of an existing &ldquo;containarized&rdquo; systems is awesome &ndash; very similar to the way you can share Docker files but here instead you get a <a href="http://www.fig.sh/">fig</a> file which describes your environment and &ldquo;tells&rdquo; your containers what to do, who to connect to etc. etc.</p>
+
+<h3>About Panamax</h3>
+
+<p><img class="left" src="/sites/default/files/images/coreos-100x100.png" style="width: 100px; height: 100px;" title="'CoreOs logo'" /> PanaMax is naturally based on CoreOs and has made some educated choices for example fleet and etcd which are shipped part of CoreOs, according to Lucas Carlson of <a href="http://www.centurylinklabs.com/">centurylinklabs</a> PanaMax will support other OS&rsquo;s and other orchestration frameworks in the future, as you may understand this was just released a few days ago (August 12 to be precise).</p>
+
+<h4>Using Panamax</h4>
+
+<p>After <a href="https://www.youtube.com/watch?v=15IKkYCfymk#t=434">installing PanaMax</a> and you have panamax up and running on your local machine you can search for existing systems as an example lets take the <a href="https://raw.githubusercontent.com/CenturyLinkLabs/panamax-public-templates/master/piwik.pmx">piwik exmaple</a> by searching in our local panamax ui via <a href="http://localhost:8888/">http://localhost:8888</a> (the default)<!-- more --></p>
+
+<p><img class="left" src="/sites/default/files/images/panamax_search_piwik.png" style="height: 391px; width: 601px;" title="'piwik search'" /></p>
+
+<p>Pressing the &ldquo;run template&rdquo; button will result in panamax parsing the pmx(fig) yaml file:</p>
+
+<pre>
+images:
+- category: Web Tier
+  name: Piwik
+  source: cbeer/piwik
+  description: Piwik web application
+  type: Default
+  ports:
+  - host_port: 80
+    container_port: 80
+  links:
+  - service: DB
+    alias: db
+- name: DB
+  source: centurylink/mysql:5.5
+  description: MySQL
+  environment:
+    - variable: MYSQL_ROOT_PASSWORD
+      value: pass@word01
+  ports:
+  - host_port: 3306
+    container_port: 3306
+  category: DB Tier
+  type: mysql
+</pre>
+
+<p><span style="line-height: 1.6em;">Then panamax will download the docker images from the section above in this example: </span><a href="https://registry.hub.docker.com/u/cbeer/piwik/builds_history/31636/" style="line-height: 1.6em;">cbeer/piwik</a><span style="line-height: 1.6em;"> &amp; </span><a href="https://registry.hub.docker.com/u/centurylink/mysql/builds_history/38801/" style="line-height: 1.6em;">centurylink/mysql:5.5</a></p>
+
+<p><img class="left" src="/sites/default/files/images/panamax_run_piwik.png" style="width: 600px; height: 525px;" title="'piwik search'" /></p>
+
+<p>Once the docker images are downloaded and spawn up you can examine the CoreOS Journal log and see exactly what occurred:</p>
+
+<pre>
+Aug 16 15:55:53 docker 140816 12:55:53 [Note] Server hostname (bind-address): &#39;0.0.0.0&#39;; port: 3306
+Aug 16 15:55:53 docker 140816 12:55:53 [Note] - &#39;0.0.0.0&#39; resolves to &#39;0.0.0.0&#39;;
+Aug 16 15:55:53 docker 140816 12:55:53 [Note] Server socket created on IP: &#39;0.0.0.0&#39;.
+Aug 16 15:55:53 docker 140816 12:55:53 [Note] Event Scheduler: Loaded 0 events
+Aug 16 15:55:53 docker 140816 12:55:53 [Note] /usr/sbin/mysqld: ready for connections.
+Aug 16 15:55:53 docker Version: &#39;5.5.38-0ubuntu0.14.04.1-log&#39; socket: &#39;/var/run/mysqld/mysqld.sock&#39; port: 3306 (Ubuntu)
+Aug 16 16:00:48 systemd Started Piwik web application.
+Aug 16 16:00:49 docker Error response from daemon: No such container: Piwik
+Aug 16 16:00:49 docker 2014/08/16 13:00:48 Error: failed to remove one or more containers
+Aug 16 16:00:50 docker /usr/lib/python2.7/dist-packages/supervisor/options.py:295: UserWarning: Supervisord is running as root and it is searching for its configuration file in default locations (including its current working directory); you probably want to specify a &quot;-c&quot; argument specifying an absolute path to a configuration file for improved security.
+Aug 16 16:00:50 docker &#39;Supervisord is running as root and it is searching &#39;
+Aug 16 16:00:50 docker 2014-08-16 13:00:50,924 CRIT Supervisor running as root (no user in config file)
+Aug 16 16:00:50 docker 2014-08-16 13:00:50,924 WARN Included extra file &quot;/etc/supervisor/conf.d/supervisord-apache2.conf&quot; during parsing
+Aug 16 16:00:51 docker 2014-08-16 13:00:51,076 INFO RPC interface &#39;supervisor&#39; initialized
+Aug 16 16:00:51 docker 2014-08-16 13:00:51,076 CRIT Server &#39;unix_http_server&#39; running without any HTTP authentication checking
+Aug 16 16:00:51 docker 2014-08-16 13:00:51,076 INFO supervisord started with pid 1
+Aug 16 16:00:52 docker 2014-08-16 13:00:52,098 INFO spawned: &#39;apache2&#39; with pid 11
+Aug 16 16:00:53 docker 2014-08-16 13:00:53,315 INFO success: apache2 entered RUNNING state, process has stayed up for &gt; than 1 seconds (startsecs)</pre>
+
+<p>As you recall CoreOs ships with fleet so you can basically run any fleet command and see what containers (units) are running on your system:</p>
+
+<pre>
+core@panamax-vm ~ $ fleetctl list-units
+UNIT          STATE       LOAD    ACTIVE      SUB     DESC            MACHINE
+DB.service      launched loaded   active       running      MySQL           0890a9ee.../10.0.2.15
+Piwik.service       launched loaded   active       running      Piwik web application 0890a9ee.../10.0.2.15
+jenkins_latest.service   launched loaded   deactivating stop-sigterm   -            0890a9ee.../10.0.2.15
+</pre>
+
+<figure class="code">&nbsp;</figure>
+
+<p>Of course you can examine each image / service separately from the UI and see the container linking / exposed ports. <img class="left" src="/sites/default/files/images/panamax_service_piwik.png" style="width: 601px; height: 484px;" title="'piwik serviceh'" /></p>
+
+<p>Same for the mysql image:<br />
+you can see the container exposed ports, and system variables which are used by piwik to connect. <img class="left" src="/sites/default/files/images/panamax_service_mysql.png" style="width: 601px; height: 360px;" title="'piwik service'" /></p>
+
+<p>The cool thing about panamax is &ldquo;forking&rdquo; a system by performing some changes and &ldquo;save as&rdquo; like so: <img class="left" src="/sites/default/files/images/panamax_save_changes.png" style="width: 600px; height: 263px;" title="'save as'" /></p>
+
+<p><span style="line-height: 1.6em;">The first time you do this you will need to create a github token &ndash; make sure you have the following settings:</span></p>
+
+<p><img class="left" src="/sites/default/files/images/github_app_token.png" style="height: 449px; width: 599px;" title="'github token'" /></p>
+
+<p>Now I should choose my github repository and publish it &hellip; <img class="left" src="/sites/default/files/images/panamax_saveas.png" style="width: 600px; height: 709px;" title="'panamax save as'" /></p>
+
+<p>And a few seconds later i have my own clone out there &hellip; <img class="left" src="/sites/default/files/images/github_my_fork.png" style="height: 403px; width: 601px;" title="'piwik fork'" /></p>
+
+<h4>To summarize</h4>
+
+<p>Panamax takes away a lot of headaches, it is quite user friendly and easy to share with your colleagues, The power of it being linked to Github is awesome (but may limit the usage for non github users). As you could see in this post the steps taken to create a template / clone a template, perform the application wiring (with fleet) was a few clicks &ndash; there is of course an API for panamax but I assume I will be able to discuss that only after I experiment a bit more with it. Two thumbs up for <a href="http://www.centurylinklabs.com/">centurylinklabs</a> putting together this great tool &ndash; definitely a tool to keep an eye on.</p>
+
+<p>References used for this article:</p>
+
+<ul>
+    <li><a href="http://www.centurylinklabs.com/">centurylinklabs</a> a great resource for Docker &ndash; iv&rsquo;e been watching it for some time now &hellip;</li>
+    <li><a href="http://panamax.io/">http://panamax.io/</a> &ndash; released Aug 12 2014</li>
+    <li><a href="https://coreos.com/">CoreOS website</a> &ndash; Linux for Massive Server Deployments</li>
+    <li><a href="http://devo.ps/">devo.ps</a> &ndash; An API for Infrastructure</li>
+    <li><a href="http://devo.ps/blog/zookeeper-vs-doozer-vs-etcd/">A nice blog post ZooKeeper vs. Doozer vs. Etcd</a></li>
+    <li><a href="http://phusion.github.io/baseimage-docker/">Base Image Docker &ndash; worth a read</a></li>
+    <li><a href="http://www.centurylinklabs.com/">centurylinklabs</a>&rsquo;s <a href="https://github.com/CenturyLinkLabs/panamax-public-templates">templates repository </a>.</li>
+</ul>
+</div>
+
+                    <div class="fb-comments" data-href="http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans" data-width="600px" data-numposts="5" data-colorscheme="light"></div>
+                    <footer></footer>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer id="footer" role="contentinfo">
+  <div class="region region-footer">
+    <section id="block-block-2" class="block block-block block-about-tikal block-even">
+      <h2 class="block-title">About Tikal</h2>
+
+      <div class="content">
+        <div>
+          <div>
+            For over 12 years, we have helped breakthrough companies achieve excellence and meet their goals.&nbsp;</div>
+          <div>
+            By doing so we've earned recognition for delivering extremely competitive and high-performance software services to clients worldwide.</div>
+        </div>
+        <div class="contact-title">
+          Contact Information</div>
+        <div class="contact-number">
+          (972) 3 6488618</div>
+        <div class="contact-mail">
+          <a href="">info@tikalk.com</a></div>
+      </div><!-- /.content -->
+    </section><!-- /.block -->
+    <section id="block-webform-client-block-22" class="block block-webform join-the-team block-odd">
+      <h2 class="block-title">Join the Team</h2>
+      <div class="content">
+        <div>
+          <div class="form-item webform-component webform-component-markup" id="webform-component-sub-header">
+              <p>Let us contact you with more information</p>
+          </div>
+          <script type="text/javascript" src="http://form.jotform.me/jsform/41884289305463"></script>
+        </div>
+      </div><!-- /.content -->
+    </section><!-- /.block -->
+    <section id="block-general-tikal-map-home-page" class="block block-general-tikal block-even">
+      <h2 class="block-title">Find us at:</h2>
+
+      <div class="content">
+
+        <div id="map_canvas_footer" style="width: 240px; height: 200px;"></div>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+            var latlng = new google.maps.LatLng(32.1065469,34.83523969999999);
+            var settings = {
+            zoom: 15,
+                  center: latlng,
+                  mapTypeControl: false,
+                  mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                  navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas_footer"), settings);      
+            var companyImage = new google.maps.MarkerImage("/assets/icons/logo-map-1a2609d2dd636172949b30cd33a1d8a0.png",
+                new google.maps.Size(100,50),
+                new google.maps.Point(0,0),
+                new google.maps.Point(50,50)
+            );
+            var companyShadow = new google.maps.MarkerImage("images/logo_shadow.png",
+                new google.maps.Size(130,50),
+                new google.maps.Point(0,0),
+                new google.maps.Point(65, 50)
+            );
+            var companyPos = new google.maps.LatLng(32.1065469,34.83523969999999);
+            var companyMarker = new google.maps.Marker({
+              position: companyPos,
+              map: map,
+              icon: companyImage,
+              shadow: companyShadow,
+              title:"",
+              zIndex: 3}
+            );
+        </script>  
+      </div><!-- /.content -->
+    </section><!-- /.block -->
+    <div id="block-block-3" class="block block-block find-us-at block-odd">
+      <div class="content">
+        <div class="address">
+          Habarzel 4 st, 1st Floor&nbsp;<br>
+          Tel Aviv 69710<br>
+          Israel
+        </div>  
+      </div><!-- /.content -->
+    </div><!-- /.block -->
+  </div>
+</footer>
+
+        <footer id="footer-second" role="contentinfo">
+  <div class="region region-footer-second">
+
+    <section id="block-menu-menu-fields" class="block block-menu block-odd">
+      <h2 class="block-title">Domains</h2>
+
+      <div class="content">
+        <ul class="menu clearfix"><li class="first leaf application lifecycle management"><a href="/devops" title="">DevOps</a></li>
+          <li class="leaf java"><a href="/java" title="">Java</a></li>
+          <li class="leaf javascript"><a href="/js" title="">JavaScript</a></li>
+          <li class="leaf .net"><a href="/android" title="">Android</a></li>
+          <li class="last leaf ruby on rails"><a href="/ruby" title="">Ruby</a></li>
+      </ul>  </div><!-- /.content -->
+    </section><!-- /.block -->
+    <section id="block-menu-menu-site-map" class="block block-menu block-even">
+      <h2 class="block-title">Site Map</h2>
+
+      <div class="content">
+        <ul class="menu clearfix"><li class="first leaf about us"><a href="/about" title="">About Us</a></li>
+          <li class="leaf active-trail solutions"><a href="/solutions" title="" class="active-trail active">Solutions</a></li>
+          <li class="leaf careers"><a href="/careers" title="">Careers</a></li>
+          <li class="leaf events"><a href="/events" title="">Events</a></li>
+          <li class="last leaf contact"><a href="/contact" title="">Contact</a></li>
+      </ul>  </div><!-- /.content -->
+    </section><!-- /.block -->
+    <div id="block-block-1" class="block block-block all-rights-reserved block-odd">
+
+      <div class="content">
+        <p>© 2013 All Rights Reserved. Tikal</p>
+      </div><!-- /.content -->
+    </div><!-- /.block -->
+    <div id="block-menu-menu-external-links" class="block block-menu block-even">
+
+      <div class="content">
+        <ul class="menu clearfix"><li class="first leaf facebook"><a href="http://www.facebook.com/TikalKnowledge" title="" target="_blank">Facebook</a></li>
+          <li class="leaf twitter"><a href="https://twitter.com/TikalK" title="" target="_blank">Twitter</a></li>
+          <li class="leaf in"><a href="http://www.linkedin.com/company/tikal-knowledge" title="" target="_blank">in</a></li>
+          <li class="last leaf rss"><a href="/rss-latest-articles" title="Latest Articles">RSS</a></li>
+      </ul>  </div><!-- /.content -->
+    </div><!-- /.block -->
+  </div>
+</footer>
+
+    </body>
+</html>

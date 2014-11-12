@@ -1,0 +1,39 @@
+---
+id: 20922
+login: robert
+first_name: Robert
+last_name: Ferentz
+description:
+about: ''
+follow_me_urls: []
+image_path: pictures/picture-20922-1384345906.jpg
+permalink: /js/robert
+skills:
+  expert_skills:
+    JavaScript: '6'
+    .NET: '6'
+    JavaScript - Events: '4'
+    jQuery: '5'
+  developer_skills:
+    SQL: '6'
+    NodeJS: '6'
+    CSS3: '6'
+    AngularJS: '6'
+experience:
+- title: Front End Developer @ IDI Ventures (XForex)
+  years: '2013'
+  description: 'My  mission was to converting a Drupal based website into a nodeJs
+    + docpad website and building a Mobile web application for Forex trading, that
+    give as much of the trade options available in their non-mobile trade application.  I
+    used several open source tools and utilities based on a javascript stack, in order
+    to automate some of the work on the website, and allow more control over it by
+    the developers.  I worked with current  technology stack: NodesJS+Express on the
+    server side to wrap an API of the Trade Engine. AngularJS on the browser to create
+    the client side UI funtionality. Twitter Bootstrap was used for the Mobile App
+    visual design.'
+- title: Front End Developer @ My6Sense
+  years: 2013-2014
+  description: Helped building an application that manages campaigns and widgets that
+    use a proprietary content recommendation engine. Also, Developed new features
+    and updgraded the framworks, used mostly NodeJS and AngularJS with MySQL Database
+    and more.

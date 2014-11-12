@@ -1,0 +1,63 @@
+
+	<div class="content">
+		<h2 class="block-title">{{title}}</h2>
+
+		<div class="event-field-item"
+			 ng-repeat="meetup in meetups track by meetup.id">
+			<div class="event-header">
+		   	 	<a class="event-title" ng-href="{{ meetup.event_url }}" target="_blank">{{ meetup.name }}</a>
+	   	 	</div>
+
+	   	 	 <div class="event-info">
+	   	 	 	<div class="event-when">
+					<div class="event-label">WHEN:</div>
+					<div class="event-date event-content">{{ meetup.time | date:'EEEE, MMMM d , H:mm' }}</div>
+				</div>
+
+				<div class="upcoming-event-info" ng-show="isUpcomingEvent">
+					<a class="event-rsvp-waitlist" ng-href="{{ meetup.event_url }}" target="_blank">
+						<div ng-class="waitlistRsvpClass(meetup)">
+							<div class="event-label" ng-bind="waitlistRsvpText(meetup)">RSVP</div>
+						</div>
+					</a>
+					<div class="event-waiting">
+						<div class="event-label">WAITING:</div>
+						<div class="event-content">{{ meetup.waitlist_count }}</div>
+					</div>
+					<div class="event-attending">
+						<div class="event-label">ATTENDING:</div>
+						<div class="event-content">{{ meetup.yes_rsvp_count }}</div>
+					</div>
+					<div class="event-price">
+						<div class="event-label">PRICE:</div>
+						<div class="event-content"> free</div>
+						<div class="event-content event-price-description"></div>
+					</div>
+				</div>
+	   	 	 </div>
+
+		   	 <div class="event-where">
+				<div class="event-label">WHERE:</div>
+				<div class="event-content event-name">{{ meetup.venue.name }}</div>
+				<div class="event-content event-adderss">{{ meetup.venue.address_1 }},</div>
+				<div class="event-content event-city">{{ meetup.venue.city }}</div>
+				<div class="event-content event-map">
+					(<a
+						ng-href="http://maps.google.com/maps?q={{ meetup.venue.address_1 }},{{ meetup.venue.city }}"
+						target="_blank">
+						map
+					</a>)
+				</div>
+			</div>
+
+			<div class="event-photos">
+				<div ng-repeat="rsvp in rsvps[meetup.id] | limitTo:5">
+        	<div class="photo">
+          	<img style="display:block !important" src="{{rsvp.member_photo.photo_link}}" />
+          </div>
+        </div>
+			</div>
+			<div class="event-description" >{{meetup.description}}</div>
+			<a class="event-read-more" ng-href="{{ meetup.event_url }}" target="_blank">Read More »</a>
+		</div>
+	</div>

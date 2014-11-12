@@ -1,0 +1,29 @@
+---
+id: 6164
+login: along
+first_name: Alon
+last_name: Golan
+description: Javascript Expert
+about: ''
+follow_me_urls:
+- il.linkedin.com/pub/alon-golan/16/9b6/8b1
+image_path: pictures/picture-6164-1393830064.jpg
+permalink: /along
+skills:
+  expert_skills:
+    JavaScript: '10'
+    OOJS: '4'
+    CSS3: '4'
+  developer_skills:
+    jQuery: '4'
+    JavaScript - Events: '4'
+  familiar_skills:
+    PYTHON: '1'
+    BackboneJS: '1'
+    NodeJS: '1'
+    MongoDB: '1'
+experience:
+- title: UI Developer leader @ VMWare
+  years: 2013-2014
+  description: The purpose of the project was to build client management UI for SaaS
+    operation. My task was to build the client UI architecture with ExtJS framework.

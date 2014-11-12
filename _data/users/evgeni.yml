@@ -1,0 +1,32 @@
+---
+id: 103
+login: evgeni
+first_name: Evgeni
+last_name: Vabishevich
+description: Sr. Java Developer
+about: ''
+follow_me_urls:
+- il.linkedin.com/in/genvab
+image_path: pictures/picture-103-1361373445.jpg
+permalink: /java/evgeny
+skills:
+  expert_skills:
+    JAVA: '9'
+    SQL: '10'
+    Hibernate: '4'
+    Spring: '5'
+    EJB2/3: '3'
+    JPA: '3'
+    JDBC: '7'
+    AJAX: '3'
+    HTML: '6'
+    Tomcat: '6'
+  developer_skills:
+    Linux: '4'
+    MySQL: '4'
+    JBoss: '4'
+    ExtJS: '4'
+    jQuery: '4'
+  familiar_skills:
+    NoSQL: '1'
+    EC2: '1'

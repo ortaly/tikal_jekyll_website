@@ -1,0 +1,23 @@
+---
+id: 125
+login: tom
+first_name: Tom
+last_name: Caspy
+description: Sr. Ruby on Rails Developer
+about: ''
+follow_me_urls: []
+image_path: pictures/picture-125-1383560559.jpg
+permalink: /ruby/tom
+skills:
+  expert_skills:
+    RoR: '3'
+    Ruby: '3'
+  developer_skills:
+    SQL: '7'
+    CSS3: '7'
+    HTML: '3'
+    OOJS: '3'
+    NodeJS: '3'
+    MongoDB: '3'
+  familiar_skills:
+    BackboneJS: '1'

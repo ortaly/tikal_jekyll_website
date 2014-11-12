@@ -1,0 +1,35 @@
+<aside id="sidebar-second" class="sidebar" role="complementary">
+  <div class="region region-sidebar-second">
+    <section id="block-views-our-team-team-domain-pages" class="block block-views block-odd">
+      <h2 class="block-title">Highlighted Team Members</h2>
+      <div class="content">
+        <div class="view view-our-team view-id-our_team view-display-id-team_domain_pages view-dom-id-0a68e7050ab17009f8a916ef5ba6dd6e">
+          <div class="view-content">
+            <div class="view-content-limit">
+              <div class="view-content-limit-content">
+                {% for team_member in page.highlighted_team_members %}
+                  <div class="views-row">
+                    {{ team_member | team_member_widget }}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="block-block-10" class="block block-block facebook-banner block-even">
+        <div class="content">
+            <p><a href="http://www.facebook.com/TikalKnowledge" target="_blank">Facebook</a></p>
+        </div>
+    </div>
+    {% include offerings-block.html %}
+    {% include shared/events.html %}
+    <section id="block-general-tikal-banners" class="block block-general-tikal block-odd">
+        <h2 class="block-title"><none></none></h2>
+        <div class="content">
+          <a class="{{ page.name }}" href="/careers"></a>
+        </div>
+    </section>
+  </div>
+</aside>

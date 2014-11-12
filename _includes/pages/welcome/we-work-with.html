@@ -1,0 +1,29 @@
+<div class="region region-content-top">
+  <section id="block-views-clients-block" class="block block-views block-odd">
+    <h2 class="block-title">We Work With:</h2>
+
+    <div class="content">
+      <div class="view view-clients view-id-clients view-display-id-block">
+
+        <div class="view-content">
+          <div class="view-content-limit">
+            <div class="view-content-limit-content">
+              {% for client in page.our_clients %}
+              {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+                <div class="views-row views-row-{{ forloop.index }} views-row-{{ thecycle }} {%if forloop.first %}views-row-first{%endif%}{%if forloop.last %}views-row-last{%endif%}">
+                  <div class="views-field views-field-field-logo">
+                    <div class="field-content">
+                      <a href="{{ '/solutions/#testimonies' | to_baseurl }}">
+                        <img typeof="foaf:Image" src="{{ client | client_image_path }}" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+    </div>  </div><!-- /.content -->
+  </section><!-- /.block -->
+</div>

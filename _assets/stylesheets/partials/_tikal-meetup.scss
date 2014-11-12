@@ -1,0 +1,461 @@
+//colors
+$color_sepia_skin_approx: #a05649;
+$color_celeste_approx: #d1d1d1;
+$black: black;
+$concrete: #f2f2f2;
+$color_tahiti_gold_approx: #e18403;
+$color_grenadier_approx: #cc4a00;
+$white: white;
+$color_mojo_approx: #be4935;
+$color_totem_pole_approx: #8d1507;
+$color_silver_approx: #bebebe;
+$color_fuscous_gray_approx: #555555;
+$color_tree_poppy_approx: #ff9d1d;
+$color_mercury_approx: #e4e4e4;
+$color_bon_jour_approx: #e1e1e1;
+$color_tundora_approx: #444444;
+$color_pancho_approx: #e9cca4;
+$color_bourbon_approx: #ba7112;
+$color_pumice_approx: #c7c7c7;
+$mercury: #e5e5e5;
+
+//@extend-elements
+//original selectors
+//.block-tikal-meetup .event-info .event-rsvp, .block-tikal-meetup .event-info .event-waitlist
+%extend_1 {
+  height: 53px;
+  margin-bottom: 24px;
+  background-color: $color_tahiti_gold_approx;
+  border: 1px solid $color_tahiti_gold_approx;
+  border-bottom: 1px solid $color_grenadier_approx;
+  border-right: 1px solid $color_grenadier_approx;
+  -moz-box-shadow: 1px 1px 2px -1px $white inset;
+  -webkit-box-shadow: 1px 1px 2px -1px $white inset;
+  //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 1px 1px 2px -1px $white inset;
+}
+
+//original selectors
+//.block-tikal-meetup .event-info .event-rsvp .event-label, .block-tikal-meetup .event-info .event-waitlist .event-label
+%extend_2 {
+  color: $white;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 9px 0 0 22px;
+}
+
+//original selectors
+//.block-tikal-meetup .event-read-more, .block-tikal-meetup .event-more-upcoming-events
+%extend_3 {
+  font-weight: 900;
+  font-size: 14px;
+  color: $color_tahiti_gold_approx;
+}
+
+//original selectors
+//#block-tikal-meetup-meetup-events-calendar .calendar-wrap #icalnext, #block-tikal-meetup-meetup-events-calendar .calendar-wrap #icalprev
+%extend_4 {
+  cursor: pointer;
+  font-size: 0;
+  padding: 10px 7px;
+  position: relative;
+  top: -28px;
+}
+
+//original selectors
+//#block-tikal-meetup-meetup-events-calendar .calendar-wrap #currentmonth, #block-tikal-meetup-meetup-events-calendar .calendar-wrap #currentyear
+%extend_5 {
+  font-weight: 400;
+  font-size: 18px;
+  display: inline-block;
+  width: 38px;
+}
+
+//original selectors
+//#block-tikal-meetup-meetup-events-calendar .icaltable th, #block-tikal-meetup-meetup-events-calendar .icaltable td
+%extend_6 {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid $color_bon_jour_approx;
+}
+
+
+.block-tikal-meetup {
+  .block-title {
+	font-size: 24px;
+	font-weight: normal;
+	float: none;
+	color: $color_sepia_skin_approx;
+	margin: 30px 0 0;
+  }
+  .event-field-item {
+	margin-bottom: 87px;
+	width: 560px;
+  }
+  .event-header {
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid $color_celeste_approx;
+	padding-bottom: 10px;
+	.event-title {
+	  color: $black;
+	  font-size: 38px;
+	  font-weight: 400;
+	  float: left;
+	  margin: 5px 0 0 -2px;
+	  line-height: 40px;
+	}
+  }
+  .event-label {
+	font-weight: bold;
+	font-size: 13px;
+	margin: 3px 0 0;
+  }
+  .event-content {
+	margin-top: 2px;
+	font-size: 14px;
+  }
+  .event-info {
+	background-color: $concrete;
+	width: 180px;
+	float: right;
+	padding: 3px 19px 45px 16px;
+	.event-when {
+	  margin-bottom: 20px;
+	}
+	.event-rsvp {
+	  @extend %extend_1;
+	  .event-label {
+		@extend %extend_2;
+	  }
+	  .event-content {
+		float: right;
+		width: 59px;
+		margin: -5px 8px 0 0;
+	  }
+	  .folding-image {
+		width: 63px;
+		height: 4px;
+		margin: 0 0 -4px -2px;
+		background-color: $color_silver_approx;
+		-moz-border-radius-topleft: 10px;
+		-webkit-border-top-left-radius: 10px;
+		-khtml-border-top-left-radius: 10px;
+		//Instead of the line below you could use @includeborder-top-left-radius($radius)
+		border-top-left-radius: 10px;
+		-moz-border-radius-topright: 10px;
+		-webkit-border-top-right-radius: 10px;
+		-khtml-border-top-right-radius: 10px;
+		//Instead of the line below you could use @includeborder-top-right-radius($radius)
+		border-top-right-radius: 10px;
+	  }
+	  .event-count {
+		float: right;
+		width: 100%;
+		font-size: 26px;
+		font-weight: 600;
+		line-height: 36px;
+		color: $color_tahiti_gold_approx;
+		text-align: center;
+		background-color: $white;
+	  }
+	  .event-text {
+		clear: both;
+		float: right;
+		color: $black;
+		width: 100%;
+		font-size: 9px;
+		font-weight: 600;
+		text-align: center;
+		margin-top: -6px;
+		height: 20px;
+		background-color: $white;
+		-moz-border-radius-bottomright: 100px 15px;
+		-webkit-border-bottom-right-radius: 100px 15px;
+		-khtml-border-bottom-right-radius: 100px 15px;
+		//Instead of the line below you could use @includeborder-bottom-right-radius($radius)
+		border-bottom-right-radius: 100px 15px;
+		-moz-border-radius-bottomleft: 100px 15px;
+		-webkit-border-bottom-left-radius: 100px 15px;
+		-khtml-border-bottom-left-radius: 100px 15px;
+		//Instead of the line below you could use @includeborder-bottom-left-radius($radius)
+		border-bottom-left-radius: 100px 15px;
+	  }
+	}
+	.event-waitlist {
+	  @extend %extend_1;
+	  background-color: $color_mojo_approx;
+	  border: 1px solid $color_mojo_approx;
+	  border-bottom: 1px solid $color_totem_pole_approx;
+	  border-right: 1px solid $color_totem_pole_approx;
+	  .event-label {
+		@extend %extend_2;
+		letter-spacing: 1px;
+		margin: 11px 0 0 25px;
+	  }
+	}
+	.event-waiting {
+	  float: right;
+	  margin: -4px 7px 0 0;
+	}
+	.event-attending {
+	  margin-bottom: 10px;
+	}
+	.event-price {
+	  .event-content {
+		float: left;
+		margin-right: 4px;
+	  }
+	  .event-price-description {
+		font-size: 11px;
+		margin-top: 4px;
+	  }
+	}
+  }
+  .event-where {
+	width: 330px;
+	margin-top: 5px;
+	.event-label {
+	  float: left;
+	  margin: 0 7px 0 2px;
+	}
+	.event-adderss {
+	  float: left;
+	  color: $color_fuscous_gray_approx;
+	}
+	.event-city {
+	  float: left;
+	  margin-right: 5px;
+	  color: $color_fuscous_gray_approx;
+	}
+	.event-map a {
+	  color: $color_tahiti_gold_approx;
+	}
+  }
+  .event-photos {
+	width: 330px;
+	margin: 20px 0 12px;
+	height: 55px;
+	.photo img {
+	  float: left;
+	  width: 55px;
+	  height: 55px;
+	  margin-right: 2px;
+	}
+  }
+  .event-description {
+	width: 330px;
+	height: 90px;
+	overflow: hidden;
+	margin: 0 0 28px -2px;
+	font-size: 15px;
+	line-height: 24px;
+  }
+  .event-read-more {
+	@extend %extend_3;
+	float: left;
+  }
+  .event-more-upcoming-events {
+	@extend %extend_3;
+	clear: both;
+	margin: 15px 10px 0 0;
+	float: right;
+	cursor: pointer;
+  }
+  .pager {
+	cursor: pointer;
+	width: 220px;
+	height: 48px;
+	text-align: center;
+	background-color: $color_tahiti_gold_approx;
+	color: $white;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 48px;
+	margin: 0 auto;
+	&:hover {
+	  background-color: $color_tree_poppy_approx;
+	}
+  }
+}
+#block-tikal-meetup-meetup-past-events {
+  margin-top: 130px;
+  .event-field-item {
+	margin-bottom: 40px;
+  }
+  .event-when {
+	float: right;
+  }
+  .event-photos {
+	clear: both;
+	width: 290px;
+	margin: 0 0 -6px 0;
+  }
+  .event-description {
+	display: inline-block;
+	clear: both;
+	margin: 10px 0;
+	width: 100%;
+	height: 50px;
+  }
+  .event-where .event-adderss {
+	margin-bottom: -3px;
+  }
+}
+#block-tikal-meetup-meetup-events-calendar {
+  width: 315px;
+  height: auto;
+  border: 1px solid $color_mercury_approx;
+  margin: 11px 0 2px 0;
+  padding: 2px 0 15px;
+  .block-title {
+	font-size: 23px;
+	font-weight: 400;
+	margin: 8px 35px 10px 10px;
+	float: left;
+	color: $black;
+  }
+  .calendar-wrap {
+	margin: 11px;
+	#icalnext {
+	  @extend %extend_4;
+	  background: url('/sites/all/themes/sasson/tikal/images/arrow-small-right.png') no-repeat;
+	  right: -72px;
+	  &:hover {
+		background: url('/sites/all/themes/sasson/tikal/images/arrow-small-right-hover.png') no-repeat;
+		right: -72px;
+	  }
+	}
+	#icalprev {
+	  @extend %extend_4;
+	  right: 20px;
+	  background: url('/sites/all/themes/sasson/tikal/images/arrow-small-left.png') no-repeat;
+	  &:hover {
+		background: url('/sites/all/themes/sasson/tikal/images/arrow-small-left-hover.png') no-repeat;
+	  }
+	}
+	#currentmonth {
+	  @extend %extend_5;
+	}
+	#currentyear {
+	  @extend %extend_5;
+	}
+  }
+  .icaltable {
+	margin-top: -9px;
+	th {
+	  @extend %extend_6;
+	  height: 40px;
+	  font-weight: 300;
+	  font-size: 17px;
+	  background-color: $concrete;
+	  border-bottom: 0;
+	  padding: 0;
+	}
+	td {
+	  @extend %extend_6;
+	  height: 33px;
+	  width: 80px;
+	  font-size: 14px;
+	  color: $color_tundora_approx;
+	  position: relative;
+	  &.today {
+		background-color: $color_pancho_approx;
+		color: $color_bourbon_approx;
+		font-weight: 600;
+		-moz-box-shadow: 0 0 0 1px $color_bourbon_approx inset;
+		-webkit-box-shadow: 0 0 0 1px $color_bourbon_approx inset;
+		//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 1px $color_bourbon_approx inset;
+	  }
+	  &.date_has_event {
+		color: $color_bourbon_approx;
+		font-weight: 600;
+		line-height: 31px;
+		.events {
+		  position: relative;
+		  .popup {
+			position: absolute;
+			bottom: 65px;
+			left: -136px;
+		  }
+		  ul {
+			position: absolute;
+			-moz-box-shadow: 0 0 0 1px $color_pumice_approx inset;
+			-webkit-box-shadow: 0 0 0 1px $color_pumice_approx inset;
+			//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 1px $color_pumice_approx inset;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-khtml-border-radius: 5px;
+			//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+			border-radius: 5px;
+			width: 265px;
+			background-color: $white;
+			z-index: 100;
+			line-height: 18px;
+			text-align: left;
+			font-size: 15px;
+			list-style: none;
+			display: none;
+			font-weight: 300;
+			color: $black;
+			padding: 15px;
+			margin: 0 0 -15px 0;
+		  }
+		  .arrow {
+			background: url('/sites/all/themes/sasson/tikal/images/date_popups_arrow.png') no-repeat;
+			position: absolute;
+			padding: 8px;
+			bottom: -15px;
+			left: 223px;
+		  }
+		}
+		.event {
+		  border-top: 1px solid $mercury;
+		  margin: 0 0 10px 0;
+		}
+		.date {
+		  font-size: 20px;
+		  font-weight: 300;
+		  display: none;
+		}
+		.name-time {
+		  margin-top: 8px;
+		  font-weight: 600;
+		  margin: 8px 0 4px;
+		}
+		.time {
+		  float: right;
+		  font-size: 13px;
+		}
+		.desc {
+		  overflow: hidden;
+		  height: 35px;
+		  font-size: 13px;
+		}
+		.event-1 {
+		  border-top: 0;
+		  .date {
+			display: block;
+		  }
+		}
+		.title a {
+		  font-size: 14px;
+		  color: $color_tahiti_gold_approx;
+		}
+		.link a {
+		  font-weight: 900;
+		  font-size: 11px;
+		  color: $color_tahiti_gold_approx;
+		}
+	  }
+	}
+	tfoot {
+	  display: none;
+	}
+  }
+}
+#block-tikal-meetup-meetup-upcoming-events .more-events {
+  display: none;
+}

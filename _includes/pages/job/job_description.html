@@ -1,0 +1,41 @@
+<div id="block-system-main" class="block block-system block-odd">
+  <div class="content">
+    <article class="node node-job node-promoted node-odd published with-comments promote node-full" about="{{ page.job_permalink }}" typeof="sioc:Item foaf:Document">
+      <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+        <div class="field-items">
+          <div class="field-item field-item-1 even">
+            <p>{{ page.job_description }}</p>
+          </div>
+        </div>
+      </div>
+      {% if page.job_requirements %}
+      <div class="field-collection-container clearfix">
+        <div class="field field-name-field-title-and-body field-type-field-collection field-label-hidden">
+          <div class="field-items">
+            <div class="field-item  field-item-1 even"><div class="field-collection-view clearfix view-mode-full field-collection-view-final"><div class="entity entity-field-collection-item field-collection-item-field-title-and-body clearfix" about="/field-collection/field-title-and-body/31" typeof="">
+                  <div class="content">
+                    <div class="field field-name-field-title-content field-type-text field-label-hidden">
+                      <div class="field-items">
+                        <div class="field-item  field-item-1 even">Requirements</div>
+                      </div>
+                    </div>
+                    <div class="field field-name-field-body-content field-type-text-long field-label-hidden">
+                      <div class="field-items">
+                        <div class="field-item  field-item-1 even">
+                          <ul>
+                            {% for requirement in page.job_requirements %}
+                            <li><p align="LEFT">{{ requirement }}</p></li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      {% endif %}
+    </article>
+  </div>
+</div>

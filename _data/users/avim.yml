@@ -1,0 +1,37 @@
+---
+id: 85
+login: avim
+first_name: Avi
+last_name: Moradi
+description: Sr. Java Developer
+about: ''
+follow_me_urls:
+- http://www.linkedin.com/profile/view?id=9512001&locale=en_US&trk=tyah2&trkInfo=tas%3Aavi%20morad%2Cidx%3A1-1-1
+image_path: pictures/picture-85-1385969752.jpg
+permalink: /java/avim
+skills:
+  expert_skills:
+    JAVA: '10'
+    SQL: '10'
+    Spring: '6'
+    Hibernate: '6'
+    JDBC: '10'
+    JBoss: '6'
+    Tomcat: '10'
+    Maven: '6'
+  developer_skills:
+    NoSQL: '2'
+    AJAX: '2'
+    jQuery: '2'
+    MySQL: '2'
+    Puppet: '2'
+experience:
+- title: Senior Developer, Liveperson
+  years: '2013'
+  description: 'The purpose of the project was to create high scale distributed real
+    time user event stream processing service as a part of next generation MSA of
+    LiveEngage platform. I took part at the Architecture, design, development, technologies,
+    best practices, methodologies, SDLC, CI, deployment, DevOps, monitoring and automation.  Technologies:
+    Java, Storm, Couchbase, BigData, Kafka, Puppet, ZooKeeper, Spring, REST, JAX-RS,
+    Jersey, JSON, Avro, GeoIP, Maven, Artifactory, SVN, Jenkins, TeamCity, Eclipse,
+    IntelliJ, JMX, JMeter, Tomcat, Linux, RPM, JIRA, Scrum '

@@ -1,0 +1,38 @@
+<div class="field field-name-field-our-experts field-type-text-long field-label-above">
+  <div class="field-label">Our Experts&nbsp;</div>
+  <div class="field-items">
+    <div class="field-item  field-item-1 even">
+      <p dir="ltr">
+        <b>We’re a diverse team of industry software experts<br>
+          helping companies achieve their projects full
+          potential!</b>
+      </p>
+      <p>
+        We provide premium services powered by our senior
+        software developers and architects, dedicated to helping
+        companies achieve their desired goals. We are very
+        competitive. We just get a kick out of providing the the
+        best work around.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section id="block-views-our-team-meet-our-experts" class="block block-views block-even">
+  <h2 class="block-title">Meet Our Experts</h2>
+  <div class="content">
+    <div class="view view-our-team view-id-our_team view-display-id-meet_our_experts">
+      <div class="view-content">
+        <div class="view-content-limit">
+          <div class="view-content-limit-content">
+            {% for expert in page.our_experts %}
+              <div class="views-row views-row-{{ forloop.index }}">
+                {{ expert | expert_widget }}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

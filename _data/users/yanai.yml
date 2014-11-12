@@ -1,0 +1,60 @@
+---
+id: 51
+login: yanai
+first_name: Yanai
+last_name: Franchi
+description: Java Architect
+about: Over 12 years of experience in the software industry, has a vast experience
+  in the Java Server architecture, in technologies such as Hibernate , Spring , EJB3
+  and much more. - Consult Tikal customers – Including architecture, Design and Implementation
+  - Group Leader at Tikal "Java" group. - "hands-on" is a key point, and an integral
+  part of the consulting. - Train and lecture on Java server side courses (e.g. Spring,
+  Hibernate, EJB3) for Tikal customers. - Lecture at Tikal “TCE” conference meetings.
+  - Specialist on JEE Technologies – JPA, Hibernate , Spring , EJB3, Gridgain, JMS,
+  HibernateSearch, REST, Lucene, Cloud-Computing and many more. - FullText Search
+  – Consulting companies on Solr, Lucene and HibernateSearch - NoSQL/BigData at Tikal
+  Fusedays – SpringData , Hadoop, MongoDB, Redis, Neo4J  
+follow_me_urls:
+- http://www.linkedin.com/profile/view?id=47051922&locale=en_US&trk=tyah&trkInfo=tarId%3A1398233911987%2Ctas%3Ayana%2Cidx%3A2-1-2
+image_path: pictures/picture-51-1361228853.jpg
+permalink: /java/yanai
+skills:
+  expert_skills:
+    JAVA: '10'
+    Solr: '2'
+    Hibernate: '7'
+    Spring: '7'
+    EJB2/3: '7'
+    JPA: '5'
+    JDBC: '10'
+  developer_skills:
+    SQL: '10'
+    NoSQL: '10'
+    MongoDB: '10'
+    AWS: '10'
+    Linux: '10'
+    MySQL: '10'
+    JBoss: '10'
+    Tomcat: '2'
+    SVN: '2'
+    ANT: '2'
+    Maven: '2'
+experience:
+- title: DBGlobe
+  years: '2014'
+  description: Initiating a new product for a new startup, which aims to anaylze SaaS
+    cloud providers regarding security and file content management. I was building
+    the architecture followed with a POC that scans organizations information on SaaS
+    providers (i.e. GoogleDrive and Box.com). This scan includes users , files and
+    events for these organizations, in order to provide content base knwledge for
+    them, using the SaaS providers platforms. The POC is deployed at AWS and uses
+    Spring platform (including Spring-Social, Spring Security, Spring-Data and more).
+- title: Mentor Graphics
+  years: '2013'
+  description: Architecting a new service product (running on Amazon), which servers
+    as a portal of electronic-components for Mentor's users. The product is a Spring/Hibernate
+    web application running on Tomcat, which includes text-search engine that enable
+    users to search and store electronic components from multiple suppliers, and use
+    the stored parts in Mentor tools. In addition, I implemented the model, persistence
+    (Hibernate, Solr) and also various services needed for the service (i.e. security,
+    transaction configuration using Spring).

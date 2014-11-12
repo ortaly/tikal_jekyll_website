@@ -1,0 +1,13 @@
+<div class="content">
+  <div class="menu-block-wrapper menu-block-3 menu-name-menu-domains parent-mlid-0 menu-level-1">
+    <ul class="menu clearfix">
+      {% for group in site.data.groups %}
+        {% for g in group %}
+          {% assign name = g[1].name %}
+          {% assign tag = g[1].tag %}
+          <li class="leaf {{ tag }}"><a href="{{ name | prepend: "/" | to_baseurl }}" title="">{{ g[1].title | replace: ' | Tikal', '' }}</a></li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

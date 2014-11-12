@@ -1,0 +1,42 @@
+---
+id: 84
+login: aviy
+first_name: Avi
+last_name: Yafe
+description: Sr. Java Developer
+about: ''
+follow_me_urls:
+- il.linkedin.com/in/aviyafe
+image_path: pictures/picture-84-1361374202.jpg
+permalink: /java/aviy
+skills:
+  expert_skills:
+    JAVA: '10'
+    GWT: '5'
+  developer_skills:
+    SQL: '7'
+    HTML: '7'
+    JavaScript: '4'
+    ANT: '4'
+    JDBC: '4'
+    Android: '4'
+    AngularJS: '3'
+    MongoDB: '3'
+experience:
+- title: Senior Developer, Intigua
+  years: '2013'
+  description: 'The purpose of the project was to create new product to control and
+    monitor VM servers on cloud, My mission was to solve major problem in the application
+    mainly in UI writing with GWT. The UI was malfunctions under scale, (large number
+    of servers), so i created mechanism to update the UI in a way that will not effect
+    the server, and the client.  The project was built using Java and GWT.  There
+    were two challenges in the project:  1. detect memory leaks in the browser  2.
+    sessions issue with client and server, concurrent users connection caused the
+    Flicking in the UI'
+- title: 'Personal Project, Tikal '
+  years: '2013 '
+  description: The purpose of the project was to create a POC that simulate Trading
+    System online Service. users can register and buy&sell stock online the system
+    receives orders and process them. I did all the tasks, Model Architecure, UI using
+    Full-stack JavaScript,Sails.JS, MongoDB, JqueryBootstarp, Socket.io.  The challenge
+    was to build model that fit to NoSQL DB, handling SailsJS+MongoDB

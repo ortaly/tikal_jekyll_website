@@ -1,0 +1,43 @@
+<section id="current-openings" class="current-openings area">
+  <section id="block-views-jobs-careers" class="block block-views list-jobs carousel-vertical block-odd">
+    <h2 class="block-title">Who Wants to Play With...</h2>
+    <div class="content">
+      <div class="view view-jobs view-id-jobs view-display-id-careers">
+        <div class="view-header">
+        </div>
+        <div class="view-content">
+          <div class="view-content-limit">
+            <div class="view-content-limit-content">
+              {% for job in site.data.jobs %}
+                <div class="views-row views-row-{{ forloop.index }}">
+                  <div class="views-field views-field-title">        
+                    <span class="field-content">
+                      <a href="{{ job.permalink | to_baseurl }}">{{ job.title }}</a>
+                    </span>
+                  </div>
+                  <div class="views-field views-field-body">        
+                    <div class="field-content">
+                      <p>{{ job.description | truncatewords: 10 }}</p>
+                    </div>  
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="view-footer">
+          <div class="carousel-vertical">
+            <div class="jcarousel-prev"></div>
+            <div class="jcarousel-next"></div>
+            <div class="hidden-shadow shadow-top">
+              <div class="shadow"></div>
+            </div>
+            <div class="hidden-shadow shadow-bottom">
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

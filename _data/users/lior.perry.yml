@@ -1,0 +1,41 @@
+---
+id: 90
+login: lior.perry
+first_name: Lior
+last_name: Perry
+description: Sr. Java Developer
+about: ''
+follow_me_urls:
+- http://www.linkedin.com/profile/view?id=48631993&locale=en_US&trk=tyah2&trkInfo=tas%3Alior%20perr%2Cidx%3A1-2-2
+image_path: pictures/picture-90-1361373886.jpg
+permalink: /java/liorperry
+skills:
+  expert_skills:
+    JAVA: '10'
+    SQL: '10'
+    Hibernate: '4'
+    Spring: '8'
+    JDBC: '10'
+    Tomcat: '4'
+  developer_skills:
+    EJB2/3: '6'
+    JPA: '6'
+    GWT: '6'
+    AJAX: '6'
+    HTML: '6'
+    JavaScript: '6'
+    MySQL: '3'
+    JBoss: '3'
+    ANT: '3'
+    Maven: '3'
+experience:
+- title: Software Architect, "IDI Ventures"
+  years: '2013'
+  description: 'The Purpose of the project was to Design & implement the new Architecture
+    for a salable trading solution. I had a few tasks: - Building a new trading engine
+    almost independent on growing amount of trading users. - Created and implemented
+    a real time profit and loss calculating algorithm. Created a staging environment
+    for new trading engine deployment. I used Java Spring Hibernate stack.  Innovative
+    Technologies: Enterprise integration patterns - Apache Camel for the staging environment,
+    Akka actor system, Hazelcast cluster distributed cache, monitoring system with
+    Play framework.'

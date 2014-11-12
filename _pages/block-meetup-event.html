@@ -1,0 +1,20 @@
+<div style="display:block !important" class="field-item events-upcoming" style="display: block;" data-ng-repeat="meetup in meetups track by meetup.id">
+    <a style="display:block !important" class="field-title" data-ng-href="{% raw %} {{ meetup.event_url }} {% endraw %}" target="_blank">{% raw %} {{ meetup.name }} {% endraw %}</a>
+    <div style="display:block !important" class="field-date">
+        <div style="display:block !important" class="date">
+            {% raw %} {{ meetup.time | date:'EEEE, MMMM d , H:mm' }} {% endraw %} @
+        </div>
+        <div style="display:block !important" class="name">
+            {% raw %} {{ meetup.venue.address_1 }} {% endraw %}, {% raw %} {{ meetup.venue.city }} {% endraw %}
+        </div>
+    </div>
+    <div style="display:block !important" class="field-photos">
+        <div style="display:block !important" class="photo">
+            <div style="display:block !important" class="photo">
+              <div ng-repeat="rsvp in rsvps[meetup.id] | limitTo:5">
+                  <img style="display:block !important" src="{% raw %}{{rsvp.member_photo.photo_link}}{% endraw %}" />
+              </div>
+          </div>
+        </div>
+    </div>
+</div>

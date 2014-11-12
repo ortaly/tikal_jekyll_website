@@ -1,0 +1,53 @@
+{% if page.user_skills %}
+  <div id="block-views-employee-skills-block" class="block block-views">
+    <div class="content">
+      <div class="view view-employee-skills view-id-employee_skills view-display-id-block view-dom-id-63f5dea5f51fcb50538eaefccc863615">
+        <div class="view-header">
+          Primary Skills
+        </div>
+        <div class="view-content">
+          <div class="view-content-limit">
+            <div class="view-content-limit-content">
+              <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+                {% skills_list %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% if page.user_experience %}
+  <section id="block-views-professional-experience-block" class="block block-views block-even">
+    <h2 class="block-title">Professional experience</h2>
+    <div class="content">
+      <div class="view view-professional-experience view-id-professional_experience view-display-id-block">
+        <div class="view-content">
+          <div class="view-content-limit">
+            <div class="view-content-limit-content">
+              {% professional_experience %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+<section id="block-views-article-author" class="block block-views block-odd">
+  <h2 class="block-title">LATEST ARTICLES</h2>
+  <div class="content"> 
+    <div class="view view-article view-id-article view-display-id-author">
+      <div class="view-content">
+        <div class="view-content-limit">
+          <div class="view-content-limit-content">
+            {% for post in paginator.posts %}
+              {% include post_preview.html %}
+            {% endfor %}
+            {% include posts_pagination.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

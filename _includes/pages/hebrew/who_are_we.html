@@ -1,0 +1,36 @@
+<div class="field field-name-field-who-are-we field-type-text-long field-label-inline clearfix hebrew">
+  <div class="field-label" style="float: none">מי אנחנו?</div>
+    <div class="field-items">
+      <div class="field-item field-item-1 even">
+        <p dir="rtl">טיקל היא חברת מומחי פיתוח בקוד פתוח, שאוהבים טכנולוגיה ואתגרים. אנו עוזרים לאנשים וארגונים שיש להם משימות שאפתניות להצליח.</p>
+        <p dir="rtl">אנחנו מקימים צוותים שאוהבים אתגרים וחשיבה אחרת ומסייעים ללקוחותינו לתכנן, לפתח, לבנות ולהטמיע כל מערכת תוכנה, בכל סדר גודל, ע"י טכנולוגיות עכשוויות ובמגוון כלי פיתוח חדשניים.</p>
+        <p dir="rtl">אנו מאמינים ששיתוף הידע והניסיון שצברנו עם קהילת הפיתוח, דרך הרצאות וסדנאות מעשיות, מסייע לאנשי הקהילה להישאר בחזית הידע המעודכן ביותר ולממש את השאיפות שלהם.</p>
+        <p dir="rtl">אנו לוקחים אחריות ומבטיחים ללקוחותינו ביצוע יעיל של כל משימה, עמידה בלוח זמנים מוקפד תוך חסכון משמעותי במשאבים וניצול רב של טכנולוגיות עכשוויות.</p>
+        <p><iframe src="//www.slideshare.net/slideshow/embed_code/37984598" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/tikalknowledge/tikal-fullstack-as-a-service-he" title="Tikal fullstack as a service (he)" target="_blank">Tikal fullstack as a service (he)</a> </strong> from <strong><a href="http://www.slideshare.net/tikalknowledge" target="_blank">Tikal Knowledge</a></strong> </div></p>
+    </div>
+  </div>
+
+  <section id="block-views-clients-our-cients" class="block block-views block-even">
+    <h2 class="block-title">הלקוחות שלנו</h2>
+    <div class="view view-clients view-id-clients view-display-id-our_cients">
+      <div class="view-content">
+        {% for client in page.our_clients %}
+          <div class="views-row">
+            <div class="views-field views-field-field-logo">
+              <div class="field-content">
+                <a href="{{ '/solutions/#testimonies' | to_baseurl }}">
+                  <img typeof="foaf:Image" src="{{ client | client_image_path }}" width="115" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section id="block-menu-block-3" class="block block-menu-block our-expertese block-odd">
+    <h2 class="block-title">המומחיות שלנו</h2>
+    {% include shared/tech-domains.html %}
+  </section>
+</div>

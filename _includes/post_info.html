@@ -1,0 +1,28 @@
+<header>
+  <div class="by-and-tags">
+    <div class="by">
+      <div class="label-by">by</div>
+      <div class="name">
+        {% post_author %}
+      </div>
+    </div>
+    <div class="tags">
+      <div class="label-tags">tags:</div>
+      <div class="float-tags">
+        <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-hidden clearfix">
+          <ul class="links">
+            {% for tag in page.tags %}
+              <li>
+                <a href="{{ tag | parameterize | prepend: '/tags/' | to_baseurl }}">{{ tag }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% post_date %}
+  {% assign link = page["permalink"] %}
+  {% assign title = page["title"] %}
+  {% include shared/sharethis_buttons.html link = link title = title %}
+</header>

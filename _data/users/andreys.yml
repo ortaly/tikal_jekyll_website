@@ -1,0 +1,44 @@
+---
+id: 115
+login: andreys
+first_name: Andrey
+last_name: Shuster
+description: JavaScript Developer
+about: ''
+follow_me_urls:
+- il.linkedin.com/in/andreyshuster
+image_path: pictures/picture-115-1383560665.jpg
+permalink: /js/andreys
+skills:
+  expert_skills:
+    OOJS: '5'
+    JavaScript: '7'
+    PYTHON: '3'
+    MSSQL: '5'
+    jQuery: '4'
+    BackboneJS: '2'
+    CSS3: '2'
+    HTML: '7'
+  developer_skills:
+    AngularJS: '1'
+    NodeJS: '1'
+    Django: '1'
+  familiar_skills:
+    RoR: '1'
+    Ruby: '1'
+experience:
+- title: JavaScript Developer @ Time To Know
+  years: '2013'
+  description: At TTK, I was part of the development team of a product, a digitallearning
+    platform, designed to enable interactive studying & testing students, and helping
+    teachers view their progress. My contribution was making the application run faster,
+    and become stable. I used Backbone, Bootstrap, Phonegap for tablets, HTML5 features
+    for media. Also, Chrome Filesystem API, Chrome Offline Storage API to make application
+    available without internet access
+- title: JavaScript Developer @ Optier
+  years: 2013-2014
+  description: 'Rewrote the application''s UI GWT & jQuery code with Bootstap and
+    refactored existing code using Backbone.js conventions. Also, removed inlined
+    strings and replaced it with external resources file in JSON format. In addition
+    - UI for configuration and statistics monitoring of transactions was written from
+    scratch with heavy use of Backbone framework unique features and abilities. '

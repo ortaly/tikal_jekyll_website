@@ -1,0 +1,34 @@
+<header id="header" role="banner">
+  <div class="logo-and-region-header">
+    <div class="background-logo"></div>
+    <a href="{{ "/" | to_baseurl }}" title="Home" rel="home" id="logo">
+      <img src="{% asset_path logo.png %}" alt="Home">
+    </a>
+
+
+    <div class="region region-header">
+      <section id="block-menu-menu-header-menu" class="block block-menu block-even">
+        <h2 class="block-title element-invisible">Header menu</h2>
+
+        <div class="content">
+          <ul class="menu clearfix">
+            {% for nav_link in site.nav_links %}
+              {% assign name = (nav_link | replace: '/', '') %}
+              <li class="leaf"><a href="{{ nav_link | to_baseurl }}" class="{% if page.name == name %} active {% endif %}">{{ name | capitalize }}</a></li>
+            {% endfor %}
+        </ul>  </div><!-- /.content -->
+      </section><!-- /.block -->
+      <section id="block-menu-menu-domains" class="block block-menu block-odd">
+        <h2 class="block-title element-invisible">Domains</h2>
+
+        <div class="content">
+          <ul class="menu clearfix"><li class="first leaf devops"><a href="{{ '/devops' | to_baseurl }}" title="">DevOps</a></li>
+            <li class="leaf java"><a href="{{ '/java' | to_baseurl }}" title="">JAVA</a></li>
+            <li class="leaf js"><a href="{{ '/js' | to_baseurl }}" title="">JS</a></li>
+            <li class="leaf android"><a href="{{ '/android' | to_baseurl }}" title="">Android</a></li>
+            <li class="last leaf ruby"><a href="{{ '/ruby' | to_baseurl }}" title="">Ruby</a></li>
+        </ul>  </div><!-- /.content -->
+      </section><!-- /.block -->
+    </div>
+  </div><!-- /#logo-and-region-header -->
+</header>

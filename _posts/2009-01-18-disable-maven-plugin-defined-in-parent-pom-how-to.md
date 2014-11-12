@@ -1,0 +1,10 @@
+---
+layout: post
+title: Disable maven plugin defined in parent pom - How To?
+created: 1232282943
+permalink: disable-maven-plugin-defined-in-parent-pom-how-to
+tags:
+- DevOps
+- maven plugin
+---
+<p>How to disable maven <span style="border: 0pt none ; margin: 0pt; padding: 0pt; background: transparent none repeat scroll 0% 0%; font-family: serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 100%; line-height: normal; font-size-adjust: none; font-stretch: normal; position: static; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: left; text-indent: 0pt; text-transform: none; color: red; text-decoration: underline; cursor: pointer;">plugin</span> defined in parent pom?</p><p>For example: I don't need to build sources.jar in the one of projects. <strong>maven-source-<span style="border: 0pt none ; margin: 0pt; padding: 0pt; background: transparent none repeat scroll 0% 0%; font-family: serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 100%; line-height: normal; font-size-adjust: none; font-stretch: normal; position: static; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: left; text-indent: 0pt; text-transform: none; color: red; text-decoration: underline; cursor: pointer;">plugin</span> </strong>is defined in parent pom.</p><p>How can I <span style="border: 0pt none ; margin: 0pt; padding: 0pt; background: transparent none repeat scroll 0% 0%; font-family: serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 100%; line-height: normal; font-size-adjust: none; font-stretch: normal; position: static; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: left; text-indent: 0pt; text-transform: none; color: green; text-decoration: underline; cursor: pointer;">neutralize</span> it ?</p><p>&nbsp;</p>

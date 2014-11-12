@@ -1,0 +1,22 @@
+{% if paginator.total_pages > 1 %}
+  <div class="item-list">
+    {% capture path %}{{ page.dir_name | to_baseurl }}{% endcapture %}
+    {% if paginator.page == 1 %}
+      <div><a class="load-more" href="{{ path }}/page{{ paginator.next_page }}"> Load more </a></div>
+    {% else %}
+      <ul class="pager">
+        <li class="pager-first first">
+          <a title="Go to first page" href="{{ path }}">« first</a>
+        </li>
+
+        {% pagination_links %}
+
+        {% if paginator.next_page %}
+          <li class="pager-last last">
+            <a title="Go to last page" href="{{ path }}/page{{ paginator.total_pages }}">last »</a>
+          </li>
+        {% endif %}
+      </ul>
+    {% endif %}
+  </div>
+{% endif %}

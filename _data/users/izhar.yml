@@ -1,0 +1,35 @@
+---
+id: 49180
+login: izhar
+first_name: Izhar
+last_name: Gavish
+description: Ruby on Rails Developer
+about: ''
+follow_me_urls:
+- http://www.linkedin.com/profile/view?id=12667121&locale=en_US&trk=tyah&trkInfo=tas%3Aizhar%20gavish%2Cidx%3A2-1-2
+image_path: pictures/picture-49180-1395236625.jpg
+permalink: /izhar
+skills:
+  expert_skills:
+    RoR: '3'
+    Ruby: '3'
+    CSS3: '3'
+  developer_skills:
+    SQL: '3'
+    jQuery: '3'
+    HTML: '3'
+  familiar_skills:
+    OOJS: '1'
+    BackboneJS: '1'
+experience:
+- title: RoR Developer @ Nurego
+  years: 2013-Present
+  description: Mainly worked on the Rails app with which the user interacts. I worked
+    on both fronted and backend features, doing Rails MVC, Javascript and CSS.  Created
+    Rails models and moving most of the logic into them, adding decorators and presenters,
+    moving from plain CSS to Sass, integrating a css framework (foundation), and adding
+    a lot of tests. With no Database at our disposal, I had to write some Ruby modules
+    / classes which added some activerecord like methods to our models (basic associations,
+    scopes, update_attributes, etc). Used RSpec & shoulda for unit / controller testing,
+    with Capybara for integration testing. Used WebMock in controller tests to mock
+    the reponses of external web services. For decorators we used Draper.

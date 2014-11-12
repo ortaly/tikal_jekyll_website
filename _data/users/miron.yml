@@ -1,0 +1,26 @@
+---
+id: 46
+login: miron
+first_name: Miron
+last_name: Gofer
+description: DevOps Engineer
+about: Joined Tikal 8 years ago. DevOps expert. Focus on Source control,
+  CI, CD and ALM methodology.
+follow_me_urls: []
+image_path: pictures/picture-46-1362341962.jpg
+permalink: /devops/miron
+skills:
+  expert_skills:
+    Git: '3'
+    SVN: '8'
+    Jenkins: '4'
+    Bugzilla: '8'
+    ANT: '7'
+    Maven: '3'
+    Nexus: '2'
+    ALM: '10'
+  developer_skills:
+    JAVA: '2'
+  familiar_skills:
+    Linux: '10'
+    MySQL: '10'

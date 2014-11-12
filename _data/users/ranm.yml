@@ -1,0 +1,22 @@
+---
+id: 143
+login: ranm
+first_name: Ran
+last_name: Mochary
+description: Sr. Java Developer
+about: ''
+follow_me_urls: []
+image_path: pictures/picture-143-1361372501.jpg
+permalink: /java/ranm
+skills:
+  expert_skills:
+    JAVA: '5'
+    SVN: '3'
+    MySQL: '3'
+  developer_skills:
+    SQL: '3'
+    EJB2/3: '3'
+    JPA: '3'
+    JavaScript: '3'
+  familiar_skills:
+    Linux: '3'

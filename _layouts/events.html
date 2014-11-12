@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% include head.html %}
+    </head>
+
+    <body class="one-sidebar sidebar-second section-{{ page.name }} {{ page.name }}-page">
+        {% include header.html %}
+        {% include navigation.html %}
+        {% include page_title.html %}
+        <div class="shadow-page"></div>
+        <div id="page">
+          {{ content }}
+        </div>
+        {% include first_footer.html %}
+        {% include second_footer.html %}
+    </body>
+</html>

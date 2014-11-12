@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% include head.html %}
+    </head>
+
+    <body class="one-sidebar sidebar-second section-{{ page.url | find_section }} page-node node-type-article all-pages with-navigation with-subnav featured dir-ltr">
+        {% include facebook_comments_script.html %}
+        {% include header.html %}
+        {% include navigation.html %}
+        {% include post_title.html %}
+        <div class="shadow-page"></div>
+        <div id="page">
+          <div id="main">
+            <div class="region region-content">
+              <div id="block-system-main" class="block block-system">
+                <div class="content">
+                  <article class="node node-article published with-comments node-full">
+                    {% include post_info.html %}
+                    {{ content }}
+                    {% include facebook_comments.html %}
+                    <footer></footer>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% include first_footer.html %}
+        {% include second_footer.html %}
+    </body>
+</html>

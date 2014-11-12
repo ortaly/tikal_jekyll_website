@@ -1,0 +1,20 @@
+<div style="display:block !important" class="field-item events-upcoming" style="display: block;" data-ng-repeat="meetup in meetups track by meetup.id">
+    <a style="display:block !important" class="field-title" data-ng-href=" {{ meetup.event_url }} " target="_blank"> {{ meetup.name }} </a>
+    <div style="display:block !important" class="field-date">
+        <div style="display:block !important" class="date">
+             {{ meetup.time | date:'EEEE, MMMM d , H:mm' }}  @
+        </div>
+        <div style="display:block !important" class="name">
+             {{ meetup.venue.address_1 }} ,  {{ meetup.venue.city }} 
+        </div>
+    </div>
+    <div style="display:block !important" class="field-photos">
+        <div style="display:block !important" class="photo">
+            <div style="display:block !important" class="photo">
+              <div ng-repeat="rsvp in rsvps[meetup.id] | limitTo:5">
+                  <img style="display:block !important" src="{{rsvp.member_photo.photo_link}}" />
+              </div>
+          </div>
+        </div>
+    </div>
+</div>

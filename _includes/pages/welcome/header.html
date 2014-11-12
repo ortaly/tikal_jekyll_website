@@ -1,0 +1,14 @@
+<div id="featured">
+  <div class="jcarousel">
+    <ul>
+      {% for slide in page.slides %}
+        <li>
+          <img width="1900" height="282" alt="" src="{{ slide.image_path | asset_path }}" typeof="foaf:Image">
+          <div class="subtitle">
+            <p dir="ltr">{{ slide.title }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

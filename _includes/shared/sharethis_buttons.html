@@ -1,0 +1,10 @@
+{% assign link = include.link %}
+{% assign title = include.title %}
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com{{ link | to_baseurl }}' st_title='{{ title }}' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com{{ link | to_baseurl }}' st_title='{{ title }}' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com{{ link | to_baseurl }}' st_title='{{ title }}' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com{{ link | to_baseurl }}' st_title='{{ title }}' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com{{ link | to_baseurl }}' st_title='{{ title }}' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>

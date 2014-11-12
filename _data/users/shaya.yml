@@ -1,0 +1,24 @@
+---
+id: 49165
+login: shaya
+first_name: Shay
+last_name: Asher
+description: 
+about: ''
+follow_me_urls: []
+image_path: pictures/picture-49165-1396881609.jpg
+permalink: /shaya
+skills:
+  expert_skills:
+    EC2: '10'
+    MongoDB: '10'
+    Jenkins: '8'
+    Chef: '9'
+    JAVA: '9'
+    Linux: '8'
+    NoSQL: '9'
+    Puppet: '8'
+    Git: '8'
+    SVN: '8'
+    Maven: '8'
+    AWS: '9'

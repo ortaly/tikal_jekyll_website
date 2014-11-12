@@ -1,0 +1,37 @@
+---
+id: 142
+login: nickolay
+first_name: Nickolay
+last_name: Ribal
+description: JS Developer
+about:  
+follow_me_urls:
+- il.linkedin.com/in/elektronik
+image_path: pictures/picture-142-1362039628.jpg
+permalink: /js/nickolay
+skills:
+  expert_skills:
+    JavaScript: '5'
+    CSS3: '6'
+    OOJS: '2'
+    jQuery: '5'
+    AJAX: '6'
+  developer_skills:
+    JavaScript - Events: '6'
+    RoR: '6'
+    Django: '6'
+    SQL: '6'
+  familiar_skills:
+    BackboneJS: '1'
+    AngularJS: '1'
+    NodeJS: '1'
+experience:
+- title: Front End Developer @ Healarium
+  years: 2012-Present
+  description: At Healrium, I took part in rewriting the website's UI. My contribution
+    was setting the standards bar and implementing a complete rewrite of the front
+    end stack, transforming the current code into a maintainable, reusable and modular
+    one and enable future deployment on a variety of mobile form factors. I used Django
+    templating with HTML5, jQuery, Require.js for Front end and some Django and RDBMS
+    for Back end. I also mentor junior developers and cooperate with QA and other
+    personnel.

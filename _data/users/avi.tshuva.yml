@@ -1,0 +1,38 @@
+---
+id: 130
+login: avi.tshuva
+first_name: Avi
+last_name: Tshuva
+description: Sr. Java/JS Developer
+about: ''
+follow_me_urls:
+- http://www.linkedin.com/profile/view?id=475204&locale=en_US&trk=tyah&trkInfo=tas%3Aavi%20tshuva%2Cidx%3A1-1-1
+image_path: pictures/picture-130-1361372859.jpg
+permalink: /js/avitshuva
+skills:
+  expert_skills:
+    JAVA: '10'
+    JS: '4'
+    NoSQL: '2'
+    MongoDB: '2'
+    Linux: '7'
+  developer_skills:
+    AngularJS: '1'
+    NodeJS: '1'
+    AJAX: '1'
+    HTML: '1'
+    CSS3: '1'
+    Spring: '1'
+    Hibernate: '1'
+experience:
+- title: '3iMind, Java & JS Expert '
+  years: 2013-2014
+  description: 'I introduced them to angular and developed sophisticated web-components.
+    Working on a sophisticated web application (an enterprise product and a service)
+    in the OSINT domain. Innovative technologies: Server: Java, MongoDB, Elastic search,
+    entity extraction, etc Client: AngularJS, JQuery, many components'
+- title: 'VmWare, Java Expert '
+  years: 2012-2013
+  description: 'I develop "APPHA" - a sub-system for Application-Aware High-Availability,
+    and "VIM" - component and relations discovery over virtual machine setup.  - stack:
+    Java, JEE, Hibernate, Spring, Flex, Rest - tools: eclipse, svn, git'

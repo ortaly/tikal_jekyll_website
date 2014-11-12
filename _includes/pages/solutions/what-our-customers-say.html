@@ -1,0 +1,25 @@
+<section id="testimonies" class="testimonies area">
+  <section id="block-views-team-testimonies-clients" class="block block-views block-odd">
+    <h2 class="block-title">What our customers say about us</h2>
+
+    <div class="content">
+      <div class="view view-team-testimonies view-id-team_testimonies view-display-id-clients view-dom-id-aa00e636079758c1ce310d7499ae1e4d">
+        <div class="view-header">
+          <p>We value our clients' relationships more than anything else. We believe that Integrity and Results are the core foundations of a successful partnership.</p>
+        </div>
+        <div class="view-content">
+          <div class="view-content-limit">
+            <div class="view-content-limit-content">
+              {% for testimony in page.client_testimonies %}
+                <div class="views-row views-row-{% cycle 'odd', 'even' %}">
+                  {{ testimony | client_testimony }}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</section>

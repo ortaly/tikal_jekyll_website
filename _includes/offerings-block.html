@@ -1,0 +1,33 @@
+<div id="block-views-offering-domains" class="block block-views block-odd">
+
+    <div class="content offering-carousel">
+      {% for offering in site.data.offerings %}
+	  {% if offering.keyword == page.name %}
+      <div class="offering{% if forloop.first == true %} active{% endif %}">
+        <div class="views-field views-field-field-image">
+          <div class="field-content">
+			<img typeof="foaf:Image" {% capture src %}big-icons/icon-{{ offering.icon }}.png{% endcapture %}
+                 src="{{ src | asset_path }}"
+                 width="89" height="60" alt=""/>
+		  </div>
+        </div>
+        <div class="views-field views-field-field-offering-tile-image">
+          <div class="field-content"></div>
+        </div>
+        <div class="views-field views-field-title">
+		  <span class="field-content">
+			<a href="{{ offering.permalink | to_baseurl }}">{{ offering.title }}</a>
+		  </span>
+		</div>
+        <div class="views-field views-field-view-node">
+		  <span class="field-content">
+			<a href="{{ offering.permalink | to_baseurl }}">Learn more </a>
+		  </span>
+		</div>
+      </div>
+	  {% endif %}
+      {% endfor %}
+    </div>
+    <!-- /.content -->
+
+</div><!-- /.block -->

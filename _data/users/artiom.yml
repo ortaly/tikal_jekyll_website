@@ -1,0 +1,50 @@
+---
+id: 128
+login: artiom
+first_name: Artiom
+last_name: Gourevitch
+description: Sr. Java Developer
+about: ''
+follow_me_urls:
+- http://www.linkedin.com/profile/view?id=26204876&locale=en_US&trk=tyah2&trkInfo=tas%3Aartiom%20g%2Cidx%3A1-1-1
+image_path: pictures/picture-128-1361372916.jpg
+permalink: /java/artiom
+skills:
+  expert_skills:
+    JAVA: '6'
+    Spring: '6'
+    Hibernate: '6'
+    Tomcat: '3'
+    Maven: '5'
+    SQL: '5'
+    Git: '5'
+    Linux: '5'
+    Jenkins: '5'
+  developer_skills:
+    JavaScript: '2'
+    NodeJS: '2'
+    MongoDB: '2'
+    NoSQL: '2'
+experience:
+- title: System Architect, "IDI Ventuers"
+  years: 2013-2014
+  description: 'Scaling the legacy system to support growing number of customers.
+    Coordinating and providing technical guidance for Java and NodeJS teams. Implementing
+    POCs.  Hibernate L2 smart distributed caching resulted in 80% database query decrease
+    and immediate saving of 80,000$ on database storage. Scaling from one trading
+    engine to multiple engines.                                          Innovative
+    technologies: Created a monitoring console based on Play framework. POCs and development
+    teams guidance on mobile API and push notifications using Reddis. '
+- title: Architecture team member, "IDI Ventuers"
+  years: 2013-2013
+  description: 'Building a new trading engine almost independent on growing number
+    of trading users. Creating and implementing a real time profit and loss calculating
+    algorithm. Creating a staging environment for the new engine deployment. Innovative
+    Technologies: Enterprise integration patterns - Apache Camel for the staging environment. '
+- title: Java Expert, "Intigua"
+  years: 2012-2013
+  description: 'Purpose of the project: To create first product version for a small
+    startup. The application won "Best of VMworld 2012" award and the startup raised
+    over 8 million dollars of seed money. I was responsible to design and develop
+    scalable messaging application, guiding and lecturing to other developers. - Innovative
+    technologies: HornetQ, Infinispan cache, Maven, Tomcat. '

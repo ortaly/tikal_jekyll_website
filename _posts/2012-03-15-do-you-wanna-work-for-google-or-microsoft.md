@@ -1,0 +1,12 @@
+---
+layout: post
+title: Do you wanna work for Google or Microsoft?
+created: 1331799240
+author: menny
+permalink: /do-you-wanna-work-google-or-microsoft
+tags:
+- .NET
+---
+<p><a href="http://www.onemenny.com/blog/wp-content/uploads/2012/03/image3.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="right" src="http://www.onemenny.com/blog/wp-content/uploads/2012/03/image_thumb3.png" width="244" height="196"></a>A good read “<a href="http://blogs.msdn.com/b/jw_on_tech/archive/2012/03/13/why-i-left-google.aspx">Why I left Google</a>” written by a <a href="http://social.msdn.microsoft.com/profile/james%20whittaker/">Microsoft employee</a> that left MS to work for Google and then returned to MS. The big point in the article is that Google started to pay more attention to their ads revenue and efficiency compared to Facebook, and less attention to their innovation that led to products like Gmail and Chrome. Facebook knows more about people than Google does, Facebook logo is a gem on every company advertising campaign – A course that caused Google to pay less attention to its innovation and more attention to its social capabilities. Maybe this is the reason for their new privacy policy changes (unification between all their products)? I think so, yes. After all Google’s bread&butter is advertisement.
+<p>For us geek’s maybe Google is one of the coolest places to work for, but there are so much more cool products and companies out there and we should stop squinting. Finding the next LinkedIn, Twitter or <a href="http://pinterest.com/">Pinterest</a> and be a part of a company that scales up to a monster is way more cool than joining one that is already there. Yes, it’s not easy to locate the winning horse and jump up on it before the race starts. Maybe it’s more luck than brains.
+<p>For me these days, Google is not <em>‘more cool’</em> than Microsoft. On the contrary, MS always was blamed as Monopoly evil company because everything is related to their operating system. While this has become the case for Google – everything is related to their ads. Do you really think one is better than the other? I now I don’t. I think they are both great places to work for, but then again so are innovating startups!</p>

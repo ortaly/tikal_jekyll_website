@@ -1,0 +1,63 @@
+
+	<div class="content">
+		<h2 class="block-title">{% raw %}{{title}}{% endraw %}</h2>
+
+		<div class="event-field-item"
+			 ng-repeat="meetup in meetups track by meetup.id">
+			<div class="event-header">
+		   	 	<a class="event-title" ng-href="{% raw %}{{ meetup.event_url }}{% endraw %}" target="_blank">{% raw %}{{ meetup.name }}{% endraw %}</a>
+	   	 	</div>
+
+	   	 	 <div class="event-info">
+	   	 	 	<div class="event-when">
+					<div class="event-label">WHEN:</div>
+					<div class="event-date event-content">{% raw %}{{ meetup.time | date:'EEEE, MMMM d , H:mm' }}{% endraw %}</div>
+				</div>
+
+				<div class="upcoming-event-info" ng-show="isUpcomingEvent">
+					<a class="event-rsvp-waitlist" ng-href="{% raw %}{{ meetup.event_url }}{% endraw %}" target="_blank">
+						<div ng-class="waitlistRsvpClass(meetup)">
+							<div class="event-label" ng-bind="waitlistRsvpText(meetup)">RSVP</div>
+						</div>
+					</a>
+					<div class="event-waiting">
+						<div class="event-label">WAITING:</div>
+						<div class="event-content">{% raw %}{{ meetup.waitlist_count }}{% endraw %}</div>
+					</div>
+					<div class="event-attending">
+						<div class="event-label">ATTENDING:</div>
+						<div class="event-content">{% raw %}{{ meetup.yes_rsvp_count }}{% endraw %}</div>
+					</div>
+					<div class="event-price">
+						<div class="event-label">PRICE:</div>
+						<div class="event-content"> free</div>
+						<div class="event-content event-price-description"></div>
+					</div>
+				</div>
+	   	 	 </div>
+
+		   	 <div class="event-where">
+				<div class="event-label">WHERE:</div>
+				<div class="event-content event-name">{% raw %}{{ meetup.venue.name }}{% endraw %}</div>
+				<div class="event-content event-adderss">{% raw %}{{ meetup.venue.address_1 }}{% endraw %},</div>
+				<div class="event-content event-city">{% raw %}{{ meetup.venue.city }}{% endraw %}</div>
+				<div class="event-content event-map">
+					(<a
+						ng-href="http://maps.google.com/maps?q={% raw %}{{ meetup.venue.address_1 }}{% endraw %},{% raw %}{{ meetup.venue.city }}{% endraw %}"
+						target="_blank">
+						map
+					</a>)
+				</div>
+			</div>
+
+			<div class="event-photos">
+				<div ng-repeat="rsvp in rsvps[meetup.id] | limitTo:5">
+        	<div class="photo">
+          	<img style="display:block !important" src="{% raw %}{{rsvp.member_photo.photo_link}}{% endraw %}" />
+          </div>
+        </div>
+			</div>
+			<div class="event-description" >{% raw %}{{meetup.description}}{% endraw %}</div>
+			<a class="event-read-more" ng-href="{% raw %}{{ meetup.event_url }}{% endraw %}" target="_blank">Read More »</a>
+		</div>
+	</div>

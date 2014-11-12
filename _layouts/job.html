@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% include head.html %}
+    </head>
+
+    <body class="one-sidebar sidebar-first section-careers careers-page node-type-job">
+        {% include header.html %}
+        {% include navigation.html %}
+        {% include page_title.html %}
+        <div class="shadow-page"></div>
+        <div id="page">
+          <div id="main">
+            <h1 class="page-title">{{ page.job_title }}</h1>
+            <div class="region region-content">
+              {% include pages/job/job_description.html %}
+              {% include pages/job/more_job_openings.html %}
+            </div>
+          </div>
+          {% include pages/careers/sidebar.html %}
+        </div>
+        {% include first_footer.html %}
+        {% include second_footer.html %}
+    </body>
+</html>

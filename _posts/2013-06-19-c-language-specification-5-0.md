@@ -1,0 +1,21 @@
+---
+layout: post
+title: C# Language Specification 5.0
+created: 1371632632
+author: menny
+permalink: c-language-specification-5-0
+tags:
+- .NET
+---
+<p style="border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; margin: 0px 0px 1.625em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(55, 55, 55); line-height: 24px;"><a href="http://www.microsoft.com/en-us/download/details.aspx?id=7029&amp;WT.mc_id=rss_alldownloads_all" style="border: 0px; font-family: inherit; font-style: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(25, 130, 209); text-decoration: none;">here</a></p>
+<h2 style="border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; margin: 0px 0px 0.8125em; outline: 0px; padding: 0px; vertical-align: baseline; clear: both; color: rgb(0, 0, 0); line-height: 24px;">
+	Why should you care about it?</h2>
+<p style="border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; margin: 0px 0px 1.625em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(55, 55, 55); line-height: 24px;">This is like a complete C# book that covers all the language features that is released by Microsoft for each version of the language. Its free, works like a quick reference guide without all the mumbo-jumbo of other books delving with examples.</p>
+<h2 style="border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; margin: 0px 0px 0.8125em; outline: 0px; padding: 0px; vertical-align: baseline; clear: both; color: rgb(0, 0, 0); line-height: 24px;">
+	But aren&rsquo;t we on .Net 4.5?</h2>
+<p style="border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; margin: 0px 0px 1.625em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(55, 55, 55); line-height: 24px;">Yes, C# 5.0 is .NET 4.5 &ndash; confusing I know. The language specifications and the framework are two different things. .NET 4.5 is part of VS 2012 which enable you to write C#5</p>
+<h2 style="border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; margin: 0px 0px 0.8125em; outline: 0px; padding: 0px; vertical-align: baseline; clear: both; color: rgb(0, 0, 0); line-height: 24px;">
+	What&rsquo;s new in it?</h2>
+<p style="border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; margin: 0px 0px 1.625em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(55, 55, 55); line-height: 24px;">Well, a lot. First there is the async functionality built into the language. Second most important is the&nbsp;<a href="http://www.onemenny.com/blog/caller-information-example-c-5-0/" style="border: 0px; font-family: inherit; font-style: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(25, 130, 209); text-decoration: none;">CallerInformation</a>&nbsp;that enables you to see, well, caller info without using reflection.</p>
+<p style="border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; margin: 0px 0px 1.625em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(55, 55, 55); line-height: 24px;"><a href="http://www.microsoft.com/en-us/download/details.aspx?id=7029&amp;WT.mc_id=rss_alldownloads_all" style="border: 0px; font-family: inherit; font-style: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(25, 130, 209); text-decoration: none;">here</a></p>
+<p style="border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; margin: 0px 0px 1.625em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(55, 55, 55); line-height: 24px;"><a href="http://www.onemenny.com/blog/wp-content/uploads/2013/06/image.png" style="border: 0px; font-family: inherit; font-style: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(25, 130, 209);"><img alt="image" border="0" height="339" src="http://www.onemenny.com/blog/wp-content/uploads/2013/06/548x339ximage_thumb.png.pagespeed.ic.ILZ5YHUPQn.png" style="border: 0px; margin-top: 0.4em; max-width: 97.5%; display: inline;" title="image" width="548" /></a></p>

@@ -1,0 +1,22 @@
+---
+id: 88
+login: yorammi
+first_name: Yoram
+last_name: Michaeli
+description: Sr. DevOps Developer
+about: Sr. DevOps Developer
+follow_me_urls:
+- il.linkedin.com/pub/yoram-michaeli/1/7a3/755
+image_path: pictures/picture-88-1362299536.jpg
+permalink: /devops/yorammi
+skills:
+  expert_skills:
+    Linux: '10'
+    Maven: '5'
+    ANT: '10'
+    JBoss: '7'
+    Tomcat: '7'
+    JAVA: '9'
+  developer_skills:
+    Bugzilla: '5'
+    EC2: '5'

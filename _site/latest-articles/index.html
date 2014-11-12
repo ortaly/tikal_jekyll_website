@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<!-- syntax highlighting CSS -->
+<!--link rel="stylesheet" href="/css/syntax.css"-->
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/assets/application-8947dcb05f2a6c782668b71b0459006a.css">
+
+<!-- Custom JS -->
+<script src="/assets/vendor/jquery-2.1.1-fbf0c31ef61d80bbbc98a9cdfc7e6632.js"></script>
+<script src="/assets/vendor/jquery.validate-466ee815d7a2fb9b74b895b6a0f9551c.js"></script>
+<script src="/assets/vendor/scrollup/jquery.scrollUp-d730604bacd24a59da00d38b42cd77af.js"></script>
+<script src="/assets/vendor/drupal_legacy-d5580e3eaf6de5a1446255d180dc73d3.js"></script>
+<script src="/assets/vendor/angular.min-a85961e158ad149389394add24fda0fb.js"></script>
+<script src="/assets/meetup_events-9be924cb3b0638fb9f317df1ecc5ce2d.js"></script>
+<script src="/assets/fb_events-429bca6672babc98218d76e33ed4c08b.js"></script>
+<script src="/assets/contact-897905f16738b8c5c1688eefae319441.js"></script>
+<script src="/assets/vendor/jquery.jcarousel-core-0548e1afb2b9f54c002c9243919e181e.js"></script>
+<script src="/assets/vendor/jquery.jcarousel-autoscroll-0568997c723ec980850263260205fc51.js"></script>
+<script src="/assets/application-e8e458ec79d0f0f55849d897ed0fa5ab.js"></script>
+
+<!-- ShareThis JS for posts section -->
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "6ae64a50-63a5-4021-a8de-b0adce0ce99b", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+    var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-1365497-6"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+    //--><!]]>
+</script>
+
+    </head>
+
+    <body class="section- group-page- page-taxonomy section-domains one-sidebar sidebar-second page-taxonomy page-taxonomy-term">
+        <div id="header-first">
+  <div class="region region-header-first">
+    <div id="block-search-form" class="block block-search block-odd">
+
+      <div class="content">
+        <form id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+              <h2 class="element-invisible">Search form</h2>
+              <div class="form-item form-type-textfield form-item-search-block-form">
+                <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+                <input title="Enter the terms you wish to search for." placeholder="Search" type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
+              </div>
+              <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit"></div><input type="hidden" name="form_build_id" value="form-hCEJ23kB0sHlr4dB3Yv5-2cDcH10yNwGSUn69WjCjF4">
+              <input type="hidden" name="form_id" value="search_block_form">
+            </div>
+      </div></form>  </div><!-- /.content -->
+    </div><!-- /.block -->
+    <div id="block-menu-menu-top-links" class="block block-menu block-even">
+    </div><!-- /.block -->
+    <div id="block-menu-menu-language" class="block block-menu block-odd">
+      
+      <div class="content">
+        <ul class="menu clearfix"><li class="first last leaf עברית"><a href="/hebrew" title="">עברית</a></li>
+      </ul>  </div><!-- /.content -->
+    </div><!-- /.block -->
+  </div>
+</div>
+<div id="google-search-form" style="visibility:hidden; width: 1px; height: 1px; float:right;">
+  <script>
+
+    (function() {
+        var cx = '012617499894110201007:qu0yvmmzksu';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = false;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
+<gcse:searchresults-only linkTarget="_self"></gcse:searchresults-only>
+
+
+<script>
+    $(document).ready(function() {
+        $('#search-block-form').submit(function (e) {
+            e.preventDefault();
+
+            //find google search form
+            var form = $('.gsc-control-wrapper-cse').find('form');
+            var input = form.find("input[name='search']");
+            var btn = form.find("input[type='image']");
+            var tikalSearch = $('#edit-search-block-form--2');
+            tikalSearch.blur();
+            $("#bg").show();
+            input.val(tikalSearch.val());
+            //form.submit();
+            btn.click();
+
+        });
+        
+    });
+
+
+</script>
+
+</div>
+
+        <header id="header" role="banner">
+  <div class="logo-and-region-header">
+    <div class="background-logo"></div>
+    <a href="/" title="Home" rel="home" id="logo">
+      <img src="/assets/logo-ebc269c722e9e1e11b3252c442c75750.png" alt="Home">
+    </a>
+
+
+    <div class="region region-header">
+      <section id="block-menu-menu-header-menu" class="block block-menu block-even">
+        <h2 class="block-title element-invisible">Header menu</h2>
+
+        <div class="content">
+          <ul class="menu clearfix">
+            
+              
+              <li class="leaf"><a href="/about" class="">About</a></li>
+            
+              
+              <li class="leaf"><a href="/solutions" class="">Solutions</a></li>
+            
+              
+              <li class="leaf"><a href="/careers" class="">Careers</a></li>
+            
+              
+              <li class="leaf"><a href="/events" class="">Events</a></li>
+            
+              
+              <li class="leaf"><a href="/contact" class="">Contact</a></li>
+            
+        </ul>  </div><!-- /.content -->
+      </section><!-- /.block -->
+      <section id="block-menu-menu-domains" class="block block-menu block-odd">
+        <h2 class="block-title element-invisible">Domains</h2>
+
+        <div class="content">
+          <ul class="menu clearfix"><li class="first leaf devops"><a href="/devops" title="">DevOps</a></li>
+            <li class="leaf java"><a href="/java" title="">JAVA</a></li>
+            <li class="leaf js"><a href="/js" title="">JS</a></li>
+            <li class="leaf android"><a href="/android" title="">Android</a></li>
+            <li class="last leaf ruby"><a href="/ruby" title="">Ruby</a></li>
+        </ul>  </div><!-- /.content -->
+      </section><!-- /.block -->
+    </div>
+  </div><!-- /#logo-and-region-header -->
+</header>
+
+        <div class="featured-background">
+  <div id="featured">
+    <div class="region-title-and-featured">
+      <div class="section_title">
+        
+          Latest Articles
+        
+      </div>
+      <div class="section_subtitle">
+        <div class="field field-name-field-sub-title field-type-text field-label-hidden">
+          <div class="field-items">
+            <div class="field-item  field-item-1 even">
+              
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /#region-title-and-featured -->
+  </div><!-- /#featured -->
+</div>
+
+        <div class="shadow-page"></div>
+        <div id="page">
+          <div id="main">
+            <div class="region region-content">
+  <div id="block-system-main" class="block block-system block-even">
+    <div class="content">
+      <div class="view view-article view-id-article view-display-id-articles_view">
+        <div class="view-content">
+          <div class="view-content-limit">
+            
+              <div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="/60-seconds-architecture-graphite">60 Seconds Architecture – Graphite</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content"><a href='/java/chaimturkel'>chaim.turkel</a></span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        
+          <a href="/tags/JAVA" class="active">JAVA</a>
+        
+          <a href="/tags/Java" class="active">Java</a>
+        
+          <a href="/tags/graphite" class="active">graphite</a>
+        
+          <a href="/tags/architecture" class="active">architecture</a>
+        
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      <time pubdate="" datetime="2014-10-20 00:00:00 +0300">
+        <div class="day">20</div>
+        Oct. 2014
+      </time>
+      
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/60-seconds-architecture-graphite' st_title='60 Seconds Architecture – Graphite' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/60-seconds-architecture-graphite' st_title='60 Seconds Architecture – Graphite' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/60-seconds-architecture-graphite' st_title='60 Seconds Architecture – Graphite' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/60-seconds-architecture-graphite' st_title='60 Seconds Architecture – Graphite' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/60-seconds-architecture-graphite' st_title='60 Seconds Architecture – Graphite' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        60 Seconds Architecture &ndash; Graphite Contents <span style='mso-element:field-begin'><span style='mso-spacerun:yes'> TOC \o &quot;1-3&quot; \n \h \z \u <span style='mso-element:field-separator'>Overview Data Graphite Components Carbon Whisper Carbon-Cache Carbon-Rely Web API Performance boost Clustering Graphite High Availability Open Issues with graphite Ramp Up Debugging Eat your own dog food Debugging techniques Multi tenet Events Overview...
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="/60-seconds-architecture-graphite">Read More »</a></span>  
+  </div>
+</div>
+
+            
+              <div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="/github-workflow-and-feature-toggles">Github Workflow & "Feature Toggles"</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content"><a href='/js/orenf'>orenf</a></span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        
+          <a href="/tags/DevOps" class="active">DevOps</a>
+        
+          <a href="/tags/GitHub" class="active">GitHub</a>
+        
+          <a href="/tags/git" class="active">git</a>
+        
+          <a href="/tags/feature-toggles" class="active">feature toggles</a>
+        
+          <a href="/tags/feature-bits" class="active">feature bits</a>
+        
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      <time pubdate="" datetime="2014-10-15 00:00:00 +0300">
+        <div class="day">15</div>
+        Oct. 2014
+      </time>
+      
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/github-workflow-and-feature-toggles' st_title='Github Workflow & "Feature Toggles"' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/github-workflow-and-feature-toggles' st_title='Github Workflow & "Feature Toggles"' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/github-workflow-and-feature-toggles' st_title='Github Workflow & "Feature Toggles"' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/github-workflow-and-feature-toggles' st_title='Github Workflow & "Feature Toggles"' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/github-workflow-and-feature-toggles' st_title='Github Workflow & "Feature Toggles"' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        I&#39;m working with git &amp; github as a vcs for the last 3 years. It&#39;s a great concept, and github has supplied great tools for developement workflow and keeping the development process documented in a well user interface system. Recently, I was introduced to the concept of &quot;Feature Toggles&quot; in...
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="/github-workflow-and-feature-toggles">Read More »</a></span>  
+  </div>
+</div>
+
+            
+              <div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="/upgrade-git-jenkins-plugin-to-2-2-7">Upgrade Git Jenkins plugin to 2.2.7</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content"><a href='/devops/liya'>liya</a></span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        
+          <a href="/tags/DevOps" class="active">DevOps</a>
+        
+          <a href="/tags/git-jenkins" class="active">git jenkins</a>
+        
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      <time pubdate="" datetime="2014-10-14 00:00:00 +0300">
+        <div class="day">14</div>
+        Oct. 2014
+      </time>
+      
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/upgrade-git-jenkins-plugin-to-2-2-7' st_title='Upgrade Git Jenkins plugin to 2.2.7' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/upgrade-git-jenkins-plugin-to-2-2-7' st_title='Upgrade Git Jenkins plugin to 2.2.7' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/upgrade-git-jenkins-plugin-to-2-2-7' st_title='Upgrade Git Jenkins plugin to 2.2.7' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/upgrade-git-jenkins-plugin-to-2-2-7' st_title='Upgrade Git Jenkins plugin to 2.2.7' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/upgrade-git-jenkins-plugin-to-2-2-7' st_title='Upgrade Git Jenkins plugin to 2.2.7' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        We have a job in Jenkins that clones git repo using HTTP, and one of the steps runs git command for the same repository. After upgrading Git Jenkins plugin to latest 2.2.7, the command line step fails with error: fatal: could not read Username for &#39;http://xxx&#39;: No such device or...
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="/upgrade-git-jenkins-plugin-to-2-2-7">Read More »</a></span>  
+  </div>
+</div>
+
+            
+              <div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="/a-journey-from-require-js-to-browserify">A Journey From Require.js to Browserify</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content"><a href='/js/orenf'>orenf</a></span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        
+          <a href="/tags/JS" class="active">JS</a>
+        
+          <a href="/tags/Javascript" class="active">Javascript</a>
+        
+          <a href="/tags/browserify" class="active">browserify</a>
+        
+          <a href="/tags/gruntjs" class="active">gruntjs</a>
+        
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      <time pubdate="" datetime="2014-09-21 00:00:00 +0300">
+        <div class="day">21</div>
+        Sep. 2014
+      </time>
+      
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/a-journey-from-require-js-to-browserify' st_title='A Journey From Require.js to Browserify' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/a-journey-from-require-js-to-browserify' st_title='A Journey From Require.js to Browserify' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/a-journey-from-require-js-to-browserify' st_title='A Journey From Require.js to Browserify' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/a-journey-from-require-js-to-browserify' st_title='A Journey From Require.js to Browserify' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/a-journey-from-require-js-to-browserify' st_title='A Journey From Require.js to Browserify' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        Excerpt:
+
+A couple of years ago I started developing&nbsp;Echoes Player&nbsp;with Backbone.js, Underscore.js, Bootstrap and Require.js.
+
+Recently I migrated the code to use&nbsp;browserify, and i&rsquo;d like to share the insights from this process.
+
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="/a-journey-from-require-js-to-browserify">Read More »</a></span>  
+  </div>
+</div>
+
+            
+              <div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="/node-js-best-practices-and-more-my-two-cents">Node.JS Best Practices And More - My Two Cents</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content"><a href='/js/dror'>dror</a></span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        
+          <a href="/tags/JS" class="active">JS</a>
+        
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      <time pubdate="" datetime="2014-09-16 00:00:00 +0300">
+        <div class="day">16</div>
+        Sep. 2014
+      </time>
+      
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/node-js-best-practices-and-more-my-two-cents' st_title='Node.JS Best Practices And More - My Two Cents' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/node-js-best-practices-and-more-my-two-cents' st_title='Node.JS Best Practices And More - My Two Cents' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/node-js-best-practices-and-more-my-two-cents' st_title='Node.JS Best Practices And More - My Two Cents' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/node-js-best-practices-and-more-my-two-cents' st_title='Node.JS Best Practices And More - My Two Cents' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/node-js-best-practices-and-more-my-two-cents' st_title='Node.JS Best Practices And More - My Two Cents' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        During the last few months I&#39;ve been working mostly on Node.JS projects so I&#39;ve been reading and trying new things all the time. Following a couple of blog posts that I&#39;ve read recently about Node.JS best practices and things you shouldn&#39;t do in Node.JS (links will follow soon) I wanted...
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="/node-js-best-practices-and-more-my-two-cents">Read More »</a></span>  
+  </div>
+</div>
+
+            
+              <div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="/guava-fluentiterable">Guava FluentIterable</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content"><a href='/java/orenkleks'>oren.kleks</a></span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        
+          <a href="/tags/JAVA" class="active">JAVA</a>
+        
+          <a href="/tags/Java-Guava" class="active">Java Guava</a>
+        
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      <time pubdate="" datetime="2014-09-14 00:00:00 +0300">
+        <div class="day">14</div>
+        Sep. 2014
+      </time>
+      
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/guava-fluentiterable' st_title='Guava FluentIterable' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/guava-fluentiterable' st_title='Guava FluentIterable' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/guava-fluentiterable' st_title='Guava FluentIterable' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/guava-fluentiterable' st_title='Guava FluentIterable' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/guava-fluentiterable' st_title='Guava FluentIterable' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        Guava FluentIterable is part of the Guava collections library. It has great similarity to the Java 8 stream API. This code filters a list with FluentIterable: from(cities).filter(city -&gt; city.contains(&ldquo;e&rdquo;)).transform(city -&gt; &ldquo;&lsquo;&rdquo;+city + &ldquo;&lsquo;&rdquo;).limit(2).join(on(&rdquo; &ldquo;)); And this one produces the same result with Java 8 stream API: cities.stream().filter(city -&gt; city.contains(&ldquo;e&rdquo;)).map( city...
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="/guava-fluentiterable">Read More »</a></span>  
+  </div>
+</div>
+
+            
+              <div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="/elastic-search-performance-tuning">Elastic Search Performance Tuning</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content"><a href='/java/chaimturkel'>chaim.turkel</a></span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        
+          <a href="/tags/JAVA" class="active">JAVA</a>
+        
+          <a href="/tags/Java" class="active">Java</a>
+        
+          <a href="/tags/ElasticSearch" class="active">ElasticSearch</a>
+        
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      <time pubdate="" datetime="2014-09-04 00:00:00 +0300">
+        <div class="day">04</div>
+        Sep. 2014
+      </time>
+      
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/elastic-search-performance-tuning' st_title='Elastic Search Performance Tuning' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/elastic-search-performance-tuning' st_title='Elastic Search Performance Tuning' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/elastic-search-performance-tuning' st_title='Elastic Search Performance Tuning' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/elastic-search-performance-tuning' st_title='Elastic Search Performance Tuning' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/elastic-search-performance-tuning' st_title='Elastic Search Performance Tuning' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        A great blog to start with for tuning your ElasticSearch server
+
+http://www.elasticsearch.org/blog/performance-considerations-elasticsearch-indexing/
+
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="/elastic-search-performance-tuning">Read More »</a></span>  
+  </div>
+</div>
+
+            
+              <div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="/alm/the-svn-performance-killer-switch">git svn --preserve-empty-dirs - the performace-killer switch</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content"><a href='/devops/yorammi'>yorammi</a></span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        
+          <a href="/tags/Incubator" class="active">Incubator</a>
+        
+          <a href="/tags/git" class="active">git</a>
+        
+          <a href="/tags/svn" class="active">svn</a>
+        
+          <a href="/tags/git2svn" class="active">git2svn</a>
+        
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      <time pubdate="" datetime="2014-08-21 00:00:00 +0300">
+        <div class="day">21</div>
+        Aug. 2014
+      </time>
+      
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/alm/the-svn-performance-killer-switch' st_title='git svn --preserve-empty-dirs - the performace-killer switch' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/alm/the-svn-performance-killer-switch' st_title='git svn --preserve-empty-dirs - the performace-killer switch' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/alm/the-svn-performance-killer-switch' st_title='git svn --preserve-empty-dirs - the performace-killer switch' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/alm/the-svn-performance-killer-switch' st_title='git svn --preserve-empty-dirs - the performace-killer switch' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/alm/the-svn-performance-killer-switch' st_title='git svn --preserve-empty-dirs - the performace-killer switch' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        I have a task to migrate an SVN repository into a new GIT repository. The origin SVN repository is a very big one - it has more than 120000 revisions (and growing&hellip;) with many branches and tags. It is basically a Java project (maven build) which contains (too) many empty...
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="/alm/the-svn-performance-killer-switch">Read More »</a></span>  
+  </div>
+</div>
+
+            
+              <div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="/devops/PanaMax_Docker_Management_4_Humans">PanaMax - Docker Management for Humans</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content"><a href='/devops/hagzag'>hagzag</a></span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        
+          <a href="/tags/DevOps" class="active">DevOps</a>
+        
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      <time pubdate="" datetime="2014-08-16 00:00:00 +0300">
+        <div class="day">16</div>
+        Aug. 2014
+      </time>
+      
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans' st_title='PanaMax - Docker Management for Humans' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans' st_title='PanaMax - Docker Management for Humans' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans' st_title='PanaMax - Docker Management for Humans' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans' st_title='PanaMax - Docker Management for Humans' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/devops/PanaMax_Docker_Management_4_Humans' st_title='PanaMax - Docker Management for Humans' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        As cool as Docker is there is quite a lot of stuff you need to start caring about, service discovery, orchestration, routing and so on, and there is a long line of technologies which help you achieve that, here is quite a long list just as an example: CoreOS &ndash;...
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="/devops/PanaMax_Docker_Management_4_Humans">Read More »</a></span>  
+  </div>
+</div>
+
+            
+              <div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="/beyond-java-jvm-event-lectures-video-and-slides">Beyond Java-JVM - Event lectures video & slides</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content"><a href='/rika'>rika</a></span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        
+          <a href="/tags/JAVA" class="active">JAVA</a>
+        
+          <a href="/tags/Java" class="active">Java</a>
+        
+          <a href="/tags/jvm" class="active">jvm</a>
+        
+          <a href="/tags/Java8" class="active">Java8</a>
+        
+          <a href="/tags/Scala" class="active">Scala</a>
+        
+          <a href="/tags/Clojure" class="active">Clojure</a>
+        
+          <a href="/tags/fullstack" class="active">fullstack</a>
+        
+          <a href="/tags/event" class="active">event</a>
+        
+          <a href="/tags/Functional-Programming" class="active">Functional Programming</a>
+        
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      <time pubdate="" datetime="2014-08-13 00:00:00 +0300">
+        <div class="day">13</div>
+        Aug. 2014
+      </time>
+      
+
+
+<span class="share-buttons">
+  <span st_url='http://tikalk.com/beyond-java-jvm-event-lectures-video-and-slides' st_title='Beyond Java-JVM - Event lectures video & slides' class='st_facebook_hcount' displayText='Facebook'></span>
+  <span st_url='http://tikalk.com/beyond-java-jvm-event-lectures-video-and-slides' st_title='Beyond Java-JVM - Event lectures video & slides' class='st_linkedin_hcount' displayText='LinkedIn'></span>
+  <span st_url='http://tikalk.com/beyond-java-jvm-event-lectures-video-and-slides' st_title='Beyond Java-JVM - Event lectures video & slides' class='st_twitter_hcount' displayText='Tweet'></span>
+  <span st_url='http://tikalk.com/beyond-java-jvm-event-lectures-video-and-slides' st_title='Beyond Java-JVM - Event lectures video & slides' class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span st_url='http://tikalk.com/beyond-java-jvm-event-lectures-video-and-slides' st_title='Beyond Java-JVM - Event lectures video & slides' class='st_plusone_hcount' displayText='Google +1'></span>
+</span>
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        &nbsp;&nbsp; Beyond Java-JVM Event lectures&nbsp;Video &amp; Slides Functional Programming with Java8, Scala &amp; Clojure &nbsp; Following the successful FullStack event with over 260 members,&nbsp;we are happy to share&nbsp;the slides and video&#39;s&nbsp;from the&nbsp;event. This event was&nbsp;about&nbsp;exploring the paradigm shift of Functional programming using JVM based languages Java8, Scala and Clojure. Read...
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="/beyond-java-jvm-event-lectures-video-and-slides">Read More »</a></span>  
+  </div>
+</div>
+
+            
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+          </div>
+          <aside id="sidebar-second" class="sidebar" role="complementary">
+  <div class="region region-sidebar-second">
+    <div id="block-block-10" class="block block-block facebook-banner block-even">
+        <div class="content">
+            <p><a href="http://www.facebook.com/TikalKnowledge" target="_blank">Facebook</a></p>
+        </div>
+    </div>
+    <section id="block-tikal-meetup-meetup-domain-pages-events" class="block block-tikal-meetup block-odd" >
+    <h2 class="block-title">Events</h2>
+    <div class="content" ng-app="meetups-module">
+      <div ng-controller="Sn.MainCtrl as mainCtrl" >
+        <div class="meetup-logo"></div>
+        <div class="buttons-container" >
+            <div
+              ng-class="{'active': mainCtrl.isUpComing}"
+              class="switch-events button button-upcoming"
+              ng-click="mainCtrl.displayUpComing()"
+            >Upcoming</div>
+            <div
+              ng-class="{'active': mainCtrl.isPast}"
+              class="switch-events button button-past"
+              ng-click="mainCtrl.displayPast()"
+            >Past</div>
+        </div>
+        <div id="meetups" ng-controller="Sn.MeetupsCtrl as meetupsCtrl">
+          <div ng-show="mainCtrl.isUpComing" >
+             <meetup-list-event
+                    title="Upcoming Events"
+                    meetups="meetupsCtrl.meetupsByStatus.upcoming"
+                    ng-show="meetupsCtrl.meetupsByStatus.upcoming.length"
+                    is-upcoming-event="true"
+                    rsvps="meetupsCtrl.meetupsRsvps"
+              ></meetup-list-event>
+          </div>
+
+           <div ng-show="mainCtrl.isPast">
+                <meetup-list-event
+                    title="Past Events"
+                    meetups="meetupsCtrl.meetupsByStatus.past"
+                    ng-show="meetupsCtrl.meetupsByStatus.past.length"
+                    rsvps="meetupsCtrl.meetupsRsvps"
+                ></meetup-list-event>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+    <section id="block-general-tikal-banners" class="block block-general-tikal block-odd">
+        <h2 class="block-title"><none></none></h2>
+        <div class="content">
+          <a class="" href="/careers"></a>
+        </div>
+    </section>
+  </div>
+</aside>
+        </div>
+        <footer id="footer" role="contentinfo">
+  <div class="region region-footer">
+    <section id="block-block-2" class="block block-block block-about-tikal block-even">
+      <h2 class="block-title">About Tikal</h2>
+
+      <div class="content">
+        <div>
+          <div>
+            For over 12 years, we have helped breakthrough companies achieve excellence and meet their goals.&nbsp;</div>
+          <div>
+            By doing so we've earned recognition for delivering extremely competitive and high-performance software services to clients worldwide.</div>
+        </div>
+        <div class="contact-title">
+          Contact Information</div>
+        <div class="contact-number">
+          (972) 3 6488618</div>
+        <div class="contact-mail">
+          <a href="">info@tikalk.com</a></div>
+      </div><!-- /.content -->
+    </section><!-- /.block -->
+    <section id="block-webform-client-block-22" class="block block-webform join-the-team block-odd">
+      <h2 class="block-title">Join the Team</h2>
+      <div class="content">
+        <div>
+          <div class="form-item webform-component webform-component-markup" id="webform-component-sub-header">
+              <p>Let us contact you with more information</p>
+          </div>
+          <script type="text/javascript" src="http://form.jotform.me/jsform/41884289305463"></script>
+        </div>
+      </div><!-- /.content -->
+    </section><!-- /.block -->
+    <section id="block-general-tikal-map-home-page" class="block block-general-tikal block-even">
+      <h2 class="block-title">Find us at:</h2>
+
+      <div class="content">
+
+        <div id="map_canvas_footer" style="width: 240px; height: 200px;"></div>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+            var latlng = new google.maps.LatLng(32.1065469,34.83523969999999);
+            var settings = {
+            zoom: 15,
+                  center: latlng,
+                  mapTypeControl: false,
+                  mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                  navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas_footer"), settings);      
+            var companyImage = new google.maps.MarkerImage("/assets/icons/logo-map-1a2609d2dd636172949b30cd33a1d8a0.png",
+                new google.maps.Size(100,50),
+                new google.maps.Point(0,0),
+                new google.maps.Point(50,50)
+            );
+            var companyShadow = new google.maps.MarkerImage("images/logo_shadow.png",
+                new google.maps.Size(130,50),
+                new google.maps.Point(0,0),
+                new google.maps.Point(65, 50)
+            );
+            var companyPos = new google.maps.LatLng(32.1065469,34.83523969999999);
+            var companyMarker = new google.maps.Marker({
+              position: companyPos,
+              map: map,
+              icon: companyImage,
+              shadow: companyShadow,
+              title:"",
+              zIndex: 3}
+            );
+        </script>  
+      </div><!-- /.content -->
+    </section><!-- /.block -->
+    <div id="block-block-3" class="block block-block find-us-at block-odd">
+      <div class="content">
+        <div class="address">
+          Habarzel 4 st, 1st Floor&nbsp;<br>
+          Tel Aviv 69710<br>
+          Israel
+        </div>  
+      </div><!-- /.content -->
+    </div><!-- /.block -->
+  </div>
+</footer>
+
+        <footer id="footer-second" role="contentinfo">
+  <div class="region region-footer-second">
+
+    <section id="block-menu-menu-fields" class="block block-menu block-odd">
+      <h2 class="block-title">Domains</h2>
+
+      <div class="content">
+        <ul class="menu clearfix"><li class="first leaf application lifecycle management"><a href="/devops" title="">DevOps</a></li>
+          <li class="leaf java"><a href="/java" title="">Java</a></li>
+          <li class="leaf javascript"><a href="/js" title="">JavaScript</a></li>
+          <li class="leaf .net"><a href="/android" title="">Android</a></li>
+          <li class="last leaf ruby on rails"><a href="/ruby" title="">Ruby</a></li>
+      </ul>  </div><!-- /.content -->
+    </section><!-- /.block -->
+    <section id="block-menu-menu-site-map" class="block block-menu block-even">
+      <h2 class="block-title">Site Map</h2>
+
+      <div class="content">
+        <ul class="menu clearfix"><li class="first leaf about us"><a href="/about" title="">About Us</a></li>
+          <li class="leaf active-trail solutions"><a href="/solutions" title="" class="active-trail active">Solutions</a></li>
+          <li class="leaf careers"><a href="/careers" title="">Careers</a></li>
+          <li class="leaf events"><a href="/events" title="">Events</a></li>
+          <li class="last leaf contact"><a href="/contact" title="">Contact</a></li>
+      </ul>  </div><!-- /.content -->
+    </section><!-- /.block -->
+    <div id="block-block-1" class="block block-block all-rights-reserved block-odd">
+
+      <div class="content">
+        <p>© 2013 All Rights Reserved. Tikal</p>
+      </div><!-- /.content -->
+    </div><!-- /.block -->
+    <div id="block-menu-menu-external-links" class="block block-menu block-even">
+
+      <div class="content">
+        <ul class="menu clearfix"><li class="first leaf facebook"><a href="http://www.facebook.com/TikalKnowledge" title="" target="_blank">Facebook</a></li>
+          <li class="leaf twitter"><a href="https://twitter.com/TikalK" title="" target="_blank">Twitter</a></li>
+          <li class="leaf in"><a href="http://www.linkedin.com/company/tikal-knowledge" title="" target="_blank">in</a></li>
+          <li class="last leaf rss"><a href="/rss-latest-articles" title="Latest Articles">RSS</a></li>
+      </ul>  </div><!-- /.content -->
+    </div><!-- /.block -->
+  </div>
+</footer>
+
+    </body>
+</html>

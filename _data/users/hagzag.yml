@@ -1,0 +1,30 @@
+---
+id: 53
+login: hagzag
+first_name: Haggai
+last_name: Zagury
+description: DevOps Architect
+about: CM/CI/DevOps engineer, Cloud &amp; Automation Consultant with over 5 years
+  of proven experience 
+follow_me_urls:
+- http://www.facebook.com/hagzag
+- http://www.linkedin.com/profile/view?id=2354513&trk
+image_path: pictures/picture-53-1363331338.jpg
+permalink: /devops/hagzag
+skills:
+  expert_skills:
+    Linux: '10'
+    Jenkins: '5'
+    SVN: '5'
+    Git: '3'
+    Bugzilla: '5'
+  developer_skills:
+    SQL: '6'
+    MySQL: '6'
+    Tomcat: '6'
+    Chef: '6'
+  familiar_skills:
+    Ruby: '2'
+    JBoss: '2'
+    ANT: '2'
+    Maven: '2'

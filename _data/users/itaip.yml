@@ -1,0 +1,21 @@
+---
+id: 47
+login: itaip
+first_name: Itai
+last_name: Peleg
+description: Sr. Java Developer
+about: ''
+follow_me_urls: []
+image_path: pictures/picture-47-1362467130.jpg
+permalink: /java/itaip
+skills:
+  expert_skills:
+    Spring: '8'
+    MongoDB: '4'
+    Git: '4'
+    Solr: '8'
+    Jenkins: '4'
+    JAVA: '9'
+  developer_skills:
+    Maven: '8'
+    MongoDB: '8'

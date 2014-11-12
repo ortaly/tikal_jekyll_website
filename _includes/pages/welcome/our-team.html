@@ -1,0 +1,23 @@
+<section id="block-views-our-team-block" class="block block-views block-even">
+  <h2 class="block-title">Our Team</h2>
+
+  <div class="content">
+    <div class="view view-our-team view-id-our_team view-display-id-block view-dom-id-0ad4f9f0323855f16358a2e4fc009175">
+      <div class="view-header">
+        We’re a diverse team of industry software experts
+        helping companies achieve their projects full potential!    
+      </div>
+      <div class="view-content">
+        <div class="view-content-latestimit">
+          <div class="view-content-limit-content">
+            {% for member in page.our_team %}
+              <div class="views-row views-row-{{ forloop.index }}">
+                {{ member | expert_widget }}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+<div class="featured-background">
+  <div id="featured">
+    <div class="region-title-and-featured">
+      <div class="section_title">
+        {% if page.header_title %}
+          {{ page.header_title }}
+        {% else %}
+          {{ site.data.page_titles[page.name].header_title }}
+        {% endif %}
+      </div>
+      <div class="section_subtitle">
+        <div class="field field-name-field-sub-title field-type-text field-label-hidden">
+          <div class="field-items">
+            <div class="field-item  field-item-1 even">
+              {% if page.header_subtitle %}
+                {{ page.header_subtitle }}
+              {% else %}
+                {{ site.data.page_titles[page.name].header_subtitle }}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /#region-title-and-featured -->
+  </div><!-- /#featured -->
+</div>

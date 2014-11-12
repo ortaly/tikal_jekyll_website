@@ -1,0 +1,57 @@
+---
+id: 126
+login: assafg
+first_name: Assaf
+last_name: Gannon
+description: JS & Java Architect
+about: Over 14 years working on start-ups in the gaming industry and SaaS projects, senior
+  level engineer with vast experience in end-to-end system development. Hands on with
+  server, client, and mobile technologies.
+follow_me_urls:
+  - https://www.linkedin.com/profile/view?id=105182702&trk=nav_responsive_tab_profile
+image_path: pictures/picture-126-1361283272.jpg
+permalink: /js/assafg
+skills:
+  expert_skills:
+    JavaScript: '8'
+    JAVA: '13'
+    Spring: '8'
+    jQuery: '5'
+    SQL: '10'
+    JDBC: '10'
+    Tomcat: '8'
+    NoSQL: '4'
+    AngularJS: '1'
+    NodeJS: '3'
+  developer_skills:
+    Hibernate: '5'
+    EJB2/3: '5'
+    NoSQL: '5'
+    JPA: '5'
+    MySQL: '5'
+    JBoss: '5'
+    ANT: '5'
+    Android: '3'
+experience:
+- title: Hands on technical leader @ IDI Ventures
+  years: '2013'
+  description: "led a team of UI engineers, and development of Web-Mobile-Client .  Update
+    the development and deployment process of the company''s CMS. I Creating a scalable
+    and up-to-date system with cutting edge (NodeJS, ExpressJS, AngularJS, Grunt,
+    Jasmine, MongoDB, Redis). and made technology improvement such as:
+      * Introduced NodeJS server side technologies
+      * Added code testing and continuos integration 
+      * Added Jenkins managed deployments
+      * Introduces SCRUM methodology."
+- title: Full stack JS Expert @ Amobbe
+  years: 2012-2013
+  description: Developing JS for Mobile. - Fixed and stabilised the mobile web advertisement
+    framework. Including Cross browser (mobile browsers) support for native JS code.
+- title: Full stack Expert @ YouAppi
+  years: '2012'
+  description: "Lead a process to improve the applications scalability and performance.
+    The process included: 
+      * Re-factoring a monolithic application into several service oriented applications.
+      * Better usage of Redis as an object cache and pub-sub system.
+      * Converting blocking tasks to asynchronous jobs.
+      * Integraation"

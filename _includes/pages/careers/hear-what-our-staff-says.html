@@ -1,0 +1,23 @@
+<section id="hear-what-our-staff-says" class="hear-what-our-staff-says area">
+  <section id="block-views-team-testimonies-block" class="block block-views Team testimonies block-even">
+    <h2 class="block-title">Hear what our staff says</h2>
+    <div class="content">
+      <div class="view view-team-testimonies view-id-team_testimonies view-display-id-block">
+        <div class="view-header">
+          <p>One of the best things about working at Tikal is being part of an enthusiastic team that enjoys sharing knowledge.</p>
+        </div>
+        <div class="view-content">
+          <div class="view-content-limit">
+            <div class="view-content-limit-content">
+              {% for testimony in page.staff_testimonies %}
+                <div class="views-row views-row-{% cycle 'odd', 'even' %}">
+                  {{ testimony | staff_testimony }}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

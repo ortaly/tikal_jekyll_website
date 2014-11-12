@@ -1,0 +1,26 @@
+---
+id: 49159
+login: guy
+first_name: Guy
+last_name: Michaelis
+description: DevOps Expert
+about: ''
+follow_me_urls:
+- il.linkedin.com/pub/guy-michaelis/0/89/568
+image_path: pictures/picture-49159-1383031512.jpg
+permalink: /devops/guy
+skills:
+  expert_skills:
+    SQL: '10'
+    EJB2/3: '7'
+    JDBC: '7'
+    Linux: '10'
+  developer_skills:
+    JAVA: '7'
+    Jenkins: '7'
+    Maven: '7'
+  familiar_skills:
+    Spring: '1'
+    JBoss: '1'
+    Tomcat: '1'
+    ANT: '1'

@@ -1,0 +1,65 @@
+<section id="block-views-article-latest-articles" class="block block-views block-even">
+  <h2 class="block-title">Latest Articles</h2>
+
+  <div class="content">
+    <div class="view view-article view-id-article view-display-id-latest_articles">
+
+      <div class="view-content">
+        <div class="view-content-limit">
+          <div class="view-content-limit-content">
+            {% for post in site.posts limit:3 %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+              <div class="views-row views-row-{{ forloop.index }} views-row-{{ thecycle }} {%if forloop.first %}views-row-first{%endif%}{%if forloop.last %}views-row-last{%endif%}">
+                <div class="fields">
+                  <div class="views-field views-field-term-node-tid">
+                    <span class="field-content">
+                      <a href="{{ post.tags.first | downcase }}">
+                        <div class="{{ post.tags.first | upcase }}">{{ post.tags.first }}</div>
+                      </a>
+                    </span>
+                  </div>
+                  <div class="views-field views-field-title">
+                    <span class="field-content">
+                      <a href="{{ post.permalink | to_baseurl }}">
+                        {{ post.title }}
+                      </a>
+                    </span>
+                  </div>
+                  <div class="views-field views-field-view-user">
+                    <span class="views-label views-label-view-user">by</span>
+                    <span class="field-content">
+                      <a href="{{ post.user.permalink | to_baseurl }}" title="View user profile." class="username" xml:lang="" about="/js/shavit" typeof="sioc:UserAccount" property="foaf:name" datatype="">{{ post.user.login }}</a>
+                    </span>
+                  </div>
+                  <div class="views-field views-field-body">
+                    <div class="field-content">
+                      <p>
+                        {{ post.content | strip_html | truncatewords:50 }}
+                      </p>
+                    </div>
+                  </div>
+                  <div class="views-field views-field-created">
+                    <span class="field-content">
+                      {{ post.date | post_date }}
+                    </span>
+                  </div>
+                  <div class="views-field views-field-comment-count">
+                    <span class="field-content">
+                      <a class="comments" href="{{ post.permalink | to_baseurl }}#comments">
+                        <div url="{{ post.permalink | to_baseurl }}" class="count-comment">0</div>
+                        <div class="label-comment">comments</div>
+                      </a>
+                    </span>
+                  </div>
+              </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="view-footer">
+        <a href="latest-articles" class="read-more">Read More »</a>
+      </div>
+    </div>
+  </div><!-- /.content -->
+</section>

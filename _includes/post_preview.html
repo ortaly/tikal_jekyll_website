@@ -1,0 +1,39 @@
+<div class="views-row">
+  <div class="views-field views-field-title">
+    <span class="field-content"><a href="{{ post.permalink | to_baseurl }}">{{ post.title }}</a></span>  
+  </div>
+  <div class="views-field views-field-uid">    
+    <span class="views-label views-label-uid">by</span>
+    <span class="field-content">{% post_author %}</span>  
+  </div>
+  <div class="views-field views-field-nothing">
+    <span class="views-label views-label-nothing">tags: </span>    
+    <span class="field-content">
+      <div class="tags">
+        {% for tag in post.tags %}
+          <a href="{{ tag | parameterize | prepend: '/tags/' | to_baseurl }}" class="active">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </span>
+  </div>
+  <div class="views-field views-field-nothing-1">    
+    <span class="views-label views-label-nothing-1">border: </span>    
+    <span class="field-content"></span>  
+  </div>
+  <div class="views-field views-field-created">        
+    <span class="field-content">
+      {% post_date %}
+      {% include shared/sharethis_buttons.html link = post.permalink title = post.title %}
+    </span>
+  </div>
+  <div class="views-field views-field-body">
+    <div class="field-content">
+      <p>
+        {{ post.content | strip_html | truncatewords:50 }}
+      </p>
+    </div>
+  </div>
+  <div class="views-field views-field-view-node">
+    <span class="field-content"><a href="{{ post.permalink | to_baseurl }}">Read More »</a></span>  
+  </div>
+</div>

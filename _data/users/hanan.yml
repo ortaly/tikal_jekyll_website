@@ -1,0 +1,26 @@
+---
+id: 97
+login: hanan
+first_name: Hanan
+last_name: Bareket
+description: Sr. Java Developer
+about: ''
+follow_me_urls:
+- il.linkedin.com/pub/hanan-ben-lulu/1/bb4/486
+image_path: pictures/picture-97-1361373693.jpg
+permalink: /java/hanan
+skills:
+  expert_skills:
+    JAVA: '10'
+    SQL: '8'
+    Spring: '8'
+    Hibernate: '8'
+  developer_skills:
+    NoSQL: '2'
+    JPA: '2'
+    JDBC: '2'
+    Linux: '2'
+    MySQL: '4'
+    Bugzilla: '4'
+    Maven: '4'
+    Tomcat: '4'

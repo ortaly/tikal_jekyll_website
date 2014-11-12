@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% include head.html %}
+    </head>
+
+    <body class="one-sidebar sidebar-first section-{{ page.name }} solutions-page node-type-offering">
+        {% include header.html %}
+        {% include navigation.html %}
+        {% include page_title.html %}
+        <div class="shadow-page"></div>
+        <div id="page">
+          <div id="main">
+            <h1 class="page-title">{{ page.job_title }}</h1>
+            <div class="region region-content">
+              <h1>{{ page.title }}</h1>
+              {{ content }}
+              <section id="block-views-offering-page" class="block block-views carousel-vertical block-even">
+                <h2 class="block-title">Additional Offerings</h2>
+                <div class="content">
+                  <div class="view view-offering view-id-offering view-display-id-page ">
+                    {% include shared/offerings_carousel.html %}
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          {% include pages/solutions/sidebar.html %}
+        </div>
+        {% include first_footer.html %}
+        {% include second_footer.html %}
+    </body>
+</html>

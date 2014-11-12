@@ -1,0 +1,49 @@
+.element-invisible {
+  display: none;
+}
+
+.node-article header .by-and-tags .field-name-field-tags {
+  max-width: 400px;
+  ul {
+    max-width: 370px;
+    height: 28px;
+    overflow: hidden;
+  }
+}
+
+#scrollUp {
+  background: url(asset_path('scrollup/back_to_top.png')) 18px 13px no-repeat #3C3C3C;
+  border: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  bottom: 10px;
+  cursor: pointer;
+  display: none;
+  height: 39px;
+  line-height: 37px;
+  padding: 5px;
+  position: fixed;
+  right: 15px;
+  text-align: center;
+  font-size: 0;
+  width: 55px;
+  z-index: 1;
+}
+
+.front ul.menu li.net a, .our-expertese ul.menu li.net a, .our-technology-domains ul.menu li.net a {
+  background-color: #E05E46;
+}
+
+.more-job-openings {
+  .views-row {
+    height: 130px;
+  }
+}
+
+.offering-description {
+  background-color: #ECECEC;
+  display: block;
+  padding: 10px 20px;
+}

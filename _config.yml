@@ -1,0 +1,15 @@
+name: Tikal
+markdown: redcarpet
+highlighter: true
+exclude:
+  - jekyll-import-0.2.0
+baseurl: /
+nav_links: [ "/about", "/solutions", "/careers", "/events", "/contact" ]
+assets:
+  debug: true
+  baseurl: /assets
+  compress:
+    css:  sass
+    js:   uglifier
+    debug: true
+paginate: 10

@@ -1,0 +1,32 @@
+---
+id: 98
+login: Meir
+first_name: Meir
+last_name: Shahar
+description: Sr. Flex & JS Developer
+about: ''
+follow_me_urls:
+- il.linkedin.com/in/meirs
+image_path: pictures/picture-98-1361373259.jpg
+permalink: /js/meirtikalkcom
+skills:
+  expert_skills:
+    JAVA: '8'
+    ActionScript: '3'
+  developer_skills:
+    JavaScript: '4'
+    SQL: '4'
+    jQuery: '3'
+    CSS3: '3'
+    MySQL: '4'
+    Linux: '4'
+    JDBC: '4'
+    Tomcat: '4'
+    ANT: '3'
+    AngularJS: '3'
+  familiar_skills:
+    OOJS: '1'
+experience:
+- title: JavaScript Developer
+  years: 2011-Present
+  description: Alcatel-Lucent

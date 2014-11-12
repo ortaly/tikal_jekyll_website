@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% include head.html %}
+    </head>
+
+    <body class="section-{{ page.name }} group-page-{{ page.name }} page-taxonomy section-domains one-sidebar sidebar-second page-taxonomy page-taxonomy-term">
+        {% include header.html %}
+        {% include navigation.html %}
+        {% include page_title.html %}
+        <div class="shadow-page"></div>
+        <div id="page">
+          <div id="main">
+            {% include tag_posts.html %}
+            {{ content }}
+          </div>
+          {% include latest-articles-sidebar.html %}
+        </div>
+        {% include first_footer.html %}
+        {% include second_footer.html %}
+    </body>
+</html>

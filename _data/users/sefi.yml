@@ -1,0 +1,38 @@
+---
+id: 56
+login: sefi
+first_name: Sefi
+last_name: Ninio
+description: JS Developer
+about: ''
+follow_me_urls:
+- il.linkedin.com/in/sefininio
+image_path: pictures/picture-56-1361370127.jpg
+permalink: /js/sefi
+skills:
+  expert_skills:
+    ActionScript: '5'
+  developer_skills:
+    OOJS: '1'
+    JS: '1'
+    JAVA: '1'
+    CSS3: '1'
+    AngularJS: '1'
+  familiar_skills:
+    Bugzilla: '3'
+    SVN: '3'
+experience:
+- title: UI Expert @ Amobee
+  years: '2012'
+  description: At Amobee, we developed a system for monitoring the performance of
+    advertising campaigns in digital media on mobile device. My contribution was moving
+    the customer from obsolete Apache Wicket technology to GWT.   I lead the project
+    development and built the UI model & architecture of the system from scratch while
+    guiding other team members. I mostly used GWT/Java for coding and development,
+    Spring for project and dispatcher configuration.
+- title: JavaScript Developer @ CA Technologies
+  years: 2013-2014
+  description: Development of infrastructure components in JS / AngularJS which served
+    the entire product developers and demanded a thorough understanding of the platform,
+    including the Services, Directives, Filters, Forms validation mechanism, and so
+    on while developing functional product.

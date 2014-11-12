@@ -1,0 +1,33 @@
+<div class="view-content">
+  <div class="view-content-limit">
+    <div class="view-content-limit-content">
+      {% for offering in site.data.offerings %}
+      <div class="views-row views-row-{{ forloop.index }} views-row-{% cycle 'odd', 'even' %}">
+        <div class="views-field views-field-field-image">        
+          <div class="field-content">
+            <img typeof="foaf:Image" src="{{ 'big-icons/icon-training-and-courses.png' | asset_path }}" width="89" height="60" alt="">
+          </div>
+        </div>
+        <div class="views-field views-field-title">        
+          <span class="field-content">
+            <a href="{{ offering.permalink | to_baseurl }}">{{ offering.title }}</a>
+          </span>
+        </div>
+        <div class="views-field views-field-body">        
+          <div class="field-content">
+            <p align="LEFT">{{ offering.content | strip_html | truncatewords: 10 }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="view-footer">
+  <div class="carousel-vertical">
+    <div class="jcarousel-prev"></div>
+    <div class="jcarousel-next"></div>
+    <div class="hidden-shadow shadow-top"><div class="shadow"></div></div>
+    <div class="hidden-shadow shadow-bottom"><div class="shadow"></div></div>
+  </div>
+</div>

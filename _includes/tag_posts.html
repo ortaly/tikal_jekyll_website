@@ -1,0 +1,16 @@
+<div class="region region-content">
+  <div id="block-system-main" class="block block-system block-even">
+    <div class="content">
+      <div class="view view-article view-id-article view-display-id-articles_view">
+        <div class="view-content">
+          <div class="view-content-limit">
+            {% for post in paginator.posts %}
+              {% include post_preview.html %}
+            {% endfor %}
+            {% include posts_pagination.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
