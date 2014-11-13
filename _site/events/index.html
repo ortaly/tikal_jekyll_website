@@ -2,6 +2,7 @@
 <html>
     <head>
       <meta charset="utf-8">
+<script src="http://connect.facebook.net/en_US/all.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Events | Tikal</title>
 <meta name="viewport" content="width=device-width">
@@ -10,7 +11,7 @@
 <!--link rel="stylesheet" href="/css/syntax.css"-->
 
 <!-- Custom CSS -->
-<link rel="stylesheet" href="/assets/application-8947dcb05f2a6c782668b71b0459006a.css">
+<link rel="stylesheet" href="/assets/application-219fbc96c01478625da465730c6d7460.css">
 
 <!-- Custom JS -->
 <script src="/assets/vendor/jquery-2.1.1-fbf0c31ef61d80bbbc98a9cdfc7e6632.js"></script>
@@ -18,14 +19,14 @@
 <script src="/assets/vendor/scrollup/jquery.scrollUp-d730604bacd24a59da00d38b42cd77af.js"></script>
 <script src="/assets/vendor/drupal_legacy-d5580e3eaf6de5a1446255d180dc73d3.js"></script>
 <script src="/assets/vendor/angular.min-a85961e158ad149389394add24fda0fb.js"></script>
-<script src="/assets/meetup_events-9be924cb3b0638fb9f317df1ecc5ce2d.js"></script>
-<script src="/assets/fb_events-429bca6672babc98218d76e33ed4c08b.js"></script>
+<script src="/assets/events-80043c42ad5118960004cf0d10a8a7b6.js"></script>
 <script src="/assets/contact-897905f16738b8c5c1688eefae319441.js"></script>
 <script src="/assets/vendor/jquery.jcarousel-core-0548e1afb2b9f54c002c9243919e181e.js"></script>
 <script src="/assets/vendor/jquery.jcarousel-autoscroll-0568997c723ec980850263260205fc51.js"></script>
-<script src="/assets/application-e8e458ec79d0f0f55849d897ed0fa5ab.js"></script>
+<script src="/assets/application-13bd1d5b5f618df473c5d42bd1b91959.js"></script>
 
 <!-- ShareThis JS for posts section -->
+
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "6ae64a50-63a5-4021-a8de-b0adce0ce99b", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 <script type="text/javascript">
@@ -177,93 +178,95 @@
 
         <div class="shadow-page"></div>
         <div id="page">
-          <div id="main" ng-app="meetups-module">
-   <div class="region region-content" ng-controller="Sn.MainCtrl as mainCtrl" >
-      <!--   <h1>{{mainCtrl.appTitle}}</h1> -->
-        <div id="meetups" ng-controller="Sn.MeetupsCtrl as meetupsCtrl">
+          <div ng-app="events-module">
+  <div id="main" >
+     <div class="region region-content" ng-controller="Sn.MainCtrl as mainCtrl" >
+        <!--   <h1>{{mainCtrl.appTitle}}</h1> -->
+          <div id="meetups" ng-controller="Sn.MeetupsCtrl as meetupsCtrl">
 
-          <section id="block-tikal-meetup-meetup-upcoming-events" class="block block-tikal-meetup block-even">
+            <section id="block-tikal-meetup-meetup-upcoming-events" class="block block-tikal-meetup block-even">
+                  <meetup-event
+                        title="UPCOMING EVENTS"
+                        meetups="meetupsCtrl.meetupsByStatus.upcoming"
+                        ng-show="meetupsCtrl.meetupsByStatus.upcoming.length"
+                        is-upcoming-event="true"
+                        rsvps="meetupsCtrl.meetupsRsvps"
+                  ></meetup-event>
+          	</section>
+
+            <section class="block block-tikal-meetup block-odd" id="block-tikal-meetup-meetup-past-events" ng-cloack>
                 <meetup-event
-                      title="UPCOMING EVENTS"
-                      meetups="meetupsCtrl.meetupsByStatus.upcoming"
-                      ng-show="meetupsCtrl.meetupsByStatus.upcoming.length"
-                      is-upcoming-event="true"
-                      rsvps="meetupsCtrl.meetupsRsvps"
+                    title="PAST EVENTS"
+                    meetups="meetupsCtrl.meetupsByStatus.past"
+                    ng-show="meetupsCtrl.meetupsByStatus.past.length"
+                    rsvps="meetupsCtrl.meetupsRsvps"
                 ></meetup-event>
-        	</section>
+          			<div class="pager" id="load-more-events" style="cursor: pointer;" ng-click="meetupsCtrl.loadMore()">Load More</div>
+            </section>
 
-          <section class="block block-tikal-meetup block-odd" id="block-tikal-meetup-meetup-past-events" ng-cloack>
-              <meetup-event
-                  title="PAST EVENTS"
-                  meetups="meetupsCtrl.meetupsByStatus.past"
-                  ng-show="meetupsCtrl.meetupsByStatus.past.length"
-                  rsvps="meetupsCtrl.meetupsRsvps"
-              ></meetup-event>
-        			<div class="pager" id="load-more-events" style="cursor: pointer;" ng-click="meetupsCtrl.loadMore()">Load More</div>
-          </section>
-
-        </div>
-  </div>
-</div>
-<aside role="complementary" class="sidebar" id="sidebar-second" ng-app="events-module">
-  <div class="region region-sidebar-second">
-    <div class="block block-block block-odd" id="block-block-12">
-      <div class="content">
-        <p><a href="http://www.meetup.com/full-stack-developer-il/" target="_blank">meetup</a></p>
-      </div><!-- /.content -->
-    </div><!-- /.block -->
-    <!--
-    
-    <section class="block block-tikal-meetup block-even" id="block-tikal-meetup-meetup-events-calendar">
-      <h2 class="block-title">Event Calendar</h2>
-      <div class="content">
-        <div class="calendar-wrap">
-          <div id="calendar"><div><span id="currentmonth">June</span> <span id="currentyear">2014</span></div><div><span id="icalprev">&lt;</span><span id="icalnext">&gt;</span></div><table cellspacing="0" class="icaltable"><thead><tr><th>Su</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead><tfoot><tr><th>Su</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></tfoot><tbody><tr><td class="padding"></td><td class="padding"></td><td class="padding"></td><td class="padding"></td><td id="2014-05-01">1</td><td id="2014-05-02">2</td><td id="2014-05-03">3</td></tr><tr><td id="2014-05-04">4</td><td id="2014-05-05">5</td><td id="2014-05-06">6</td><td id="2014-05-07">7</td><td id="2014-05-08">8</td><td id="2014-05-09">9</td><td id="2014-05-10">10</td></tr><tr><td id="2014-05-11">11</td><td id="2014-05-12">12</td><td id="2014-05-13">13</td><td id="2014-05-14">14</td><td id="2014-05-15">15</td><td id="2014-05-16">16</td><td id="2014-05-17">17</td></tr><tr><td id="2014-05-18">18</td><td id="2014-05-19">19</td><td id="2014-05-20">20</td><td id="2014-05-21">21</td><td id="2014-05-22" class="today">22</td><td id="2014-05-23">23</td><td id="2014-05-24">24</td></tr><tr><td id="2014-05-25">25</td><td id="2014-05-26">26</td><td id="2014-05-27">27</td><td id="2014-05-28">28</td><td id="2014-05-29">29</td><td id="2014-05-30">30</td><td id="2014-05-31">31</td></tr></tbody></table>
           </div>
-          <script>
-            var events = eval(Drupal.settings.tikalMeetup.events);
-            jQuery('#calendar').ical({startOnSunday: true,
-            daynames: ['Su', 'M', 'T', 'W', 'T', 'F', 'S'],
-            monthnames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
-            eventdates: events });
-          </script>
-        </div>
-      </div>&lt;!&ndash; /.content &ndash;&gt;
-    </section>-->
-
-    <div id="block-tikal-fbgroup-feed-fbgroup-feed" ng-controller="FeedCtrl">
-      <div class="content">
-        <div class="view-container fb-group-feed-wrapper">
-          <div class="fb-group-feed-header"> 
-            <a class="fbgroup-feed-image" href="https://www.facebook.com/groups/225585444263260" target="_blank" title="Fullstack Developers Israel"></a>
-            Join the discussion
-          </div>
-          <div class="fb-group-feed-title">
-            <img src="https://fbstatic-a.akamaihd.net/rsrc.php/v2/y0/r/-HwODK0dBGZ.png">
-            <h2><a>Fullstack Developers Israel</a></h2>
-          </div>
-
-          <div class="fb-group-feed-body">
-            <div ng-repeat="feed in data" class="fb-group-feed-post">
-               <a href= title="View " +  + "\'s profile" target="_blank">
-                  <img border="0" title=  alt= src=>
-              </a>
-              <div class="fb-group-feed-post-author">
-                 <span>By <a href= target="_blank"></a>
-                 </span>
-                 <span></span>
-              </div>
-              <div class="fb-group-feed-post-message">
-                <a href= target="_blank"></a>
-              </div> 
-            </div>
-          </div>
-          </div>
-      </div>
     </div>
-
   </div>
-</aside>
+  <aside role="complementary" class="sidebar" id="sidebar-second">
+    <div class="region region-sidebar-second">
+      <div class="block block-block block-odd" id="block-block-12">
+        <div class="content">
+          <p><a href="http://www.meetup.com/full-stack-developer-il/" target="_blank">meetup</a></p>
+        </div><!-- /.content -->
+      </div><!-- /.block -->
+      <!--
+      
+      <section class="block block-tikal-meetup block-even" id="block-tikal-meetup-meetup-events-calendar">
+        <h2 class="block-title">Event Calendar</h2>
+        <div class="content">
+          <div class="calendar-wrap">
+            <div id="calendar"><div><span id="currentmonth">June</span> <span id="currentyear">2014</span></div><div><span id="icalprev">&lt;</span><span id="icalnext">&gt;</span></div><table cellspacing="0" class="icaltable"><thead><tr><th>Su</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead><tfoot><tr><th>Su</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></tfoot><tbody><tr><td class="padding"></td><td class="padding"></td><td class="padding"></td><td class="padding"></td><td id="2014-05-01">1</td><td id="2014-05-02">2</td><td id="2014-05-03">3</td></tr><tr><td id="2014-05-04">4</td><td id="2014-05-05">5</td><td id="2014-05-06">6</td><td id="2014-05-07">7</td><td id="2014-05-08">8</td><td id="2014-05-09">9</td><td id="2014-05-10">10</td></tr><tr><td id="2014-05-11">11</td><td id="2014-05-12">12</td><td id="2014-05-13">13</td><td id="2014-05-14">14</td><td id="2014-05-15">15</td><td id="2014-05-16">16</td><td id="2014-05-17">17</td></tr><tr><td id="2014-05-18">18</td><td id="2014-05-19">19</td><td id="2014-05-20">20</td><td id="2014-05-21">21</td><td id="2014-05-22" class="today">22</td><td id="2014-05-23">23</td><td id="2014-05-24">24</td></tr><tr><td id="2014-05-25">25</td><td id="2014-05-26">26</td><td id="2014-05-27">27</td><td id="2014-05-28">28</td><td id="2014-05-29">29</td><td id="2014-05-30">30</td><td id="2014-05-31">31</td></tr></tbody></table>
+            </div>
+            <script>
+              var events = eval(Drupal.settings.tikalMeetup.events);
+              jQuery('#calendar').ical({startOnSunday: true,
+              daynames: ['Su', 'M', 'T', 'W', 'T', 'F', 'S'],
+              monthnames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
+              eventdates: events });
+            </script>
+          </div>
+        </div>&lt;!&ndash; /.content &ndash;&gt;
+      </section>-->
+
+      <div id="block-tikal-fbgroup-feed-fbgroup-feed" ng-controller="FeedCtrl">
+        <div class="content">
+          <div class="view-container fb-group-feed-wrapper">
+            <div class="fb-group-feed-header"> 
+              <a class="fbgroup-feed-image" href="https://www.facebook.com/groups/225585444263260" target="_blank" title="Fullstack Developers Israel"></a>
+              Join the discussion
+            </div>
+            <div class="fb-group-feed-title">
+              <img src="https://fbstatic-a.akamaihd.net/rsrc.php/v2/y0/r/-HwODK0dBGZ.png">
+              <h2><a>Fullstack Developers Israel</a></h2>
+            </div>
+
+            <div class="fb-group-feed-body">
+              <div ng-repeat="feed in data" class="fb-group-feed-post">
+                 <a href={{feed.profilePage}} title="View " + {{feed.authorName}} + "\'s profile" target="_blank">
+                    <img border="0" title={{feed.authorName}}  alt={{feed.authorName}} src={{feed.image}}>
+                </a>
+                <div class="fb-group-feed-post-author">
+                   <span>By <a href={{feed.profilePage}} target="_blank">{{feed.authorName}}</a>
+                   </span>
+                   <span>{{feed.created | dateSuffix}}</span>
+                </div>
+                <div class="fb-group-feed-post-message">
+                  <a href={{feed.postMessage}} target="_blank">{{feed.message | cut:true:100}}</a>
+                </div> 
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+</div>
 
         </div>
         <footer id="footer" role="contentinfo">

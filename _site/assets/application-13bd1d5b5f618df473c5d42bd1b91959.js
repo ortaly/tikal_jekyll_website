@@ -8,7 +8,6 @@
 
 
 
-
 !function () {
 
 function carousel(container, selector, delay) {
